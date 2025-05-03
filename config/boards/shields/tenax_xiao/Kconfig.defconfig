@@ -1,7 +1,7 @@
-if SHIELD_tenax_xiao_LEFT
+if SHIELD_TENAXOLED_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "tenax_xiao"
+	default "tenaxoled"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
@@ -9,15 +9,15 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 endif
 
 
-if SHIELD_tenax_xiao_RIGHT
+if SHIELD_TENAXOLED_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "tenax_xiao Right"
+	default "tenaxoled Right"
 	
 endif
 
 
-if SHIELD_tenax_xiao_LEFT || SHIELD_tenax_xiao_RIGHT
+if SHIELD_TENAXOLED_LEFT || SHIELD_TENAXOLED_RIGHT
 
 config ZMK_SPLIT
 	default y
@@ -31,12 +31,15 @@ config I2C
 config SSD1306
 	default y
 
-config SSD1306_REVERSE_MODE
-	default y
-
 endif # ZMK_DISPLAY
 
 if LVGL
+
+config LV_HOR_RES_MAX
+	default 128
+
+config LV_VER_RES_MAX
+	default 32
 
 config LV_Z_VDB_SIZE
 	default 64
@@ -46,6 +49,10 @@ config LV_DPI_DEF
 
 config LV_Z_BITS_PER_PIXEL
 	default 1
+
+choice LV_COLOR_DEPTH
+	default LV_COLOR_DEPTH_1
+endchoice
 
 endif # LVGL
 
