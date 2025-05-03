@@ -1,8 +1,8 @@
 include:
   - board: seeeduino_xiao_ble
-    shield: tenax_xiao_left
+    shield: tenaxoled_left
   - board: seeeduino_xiao_ble
-    shield: tenax_xiao_right
+    shield: tenaxoled_right
   - board: seeeduino_xiao_ble
     shield: settings_reset
 
