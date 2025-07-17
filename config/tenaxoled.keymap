@@ -138,7 +138,7 @@
 
         cmb_undo {
             bindings = <&kp LG(Z)>;
-            key-positions = <1 10>;
+            key-positions = <11 12 13>;
             layers = <0>;
             timeout-ms = <200>;
         };
@@ -285,7 +285,7 @@
 
         cmb_redo {
             bindings = <&kp LS(RG(Z))>;
-            key-positions = <8 19>;
+            key-positions = <17 16 18>;
             timeout-ms = <200>;
             layers = <0>;
         };
