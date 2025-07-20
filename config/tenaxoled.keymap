@@ -638,7 +638,7 @@
             bindings = <
 &none  &kp EXCL        &kp AT_SIGN     &kp LA(NUMBER_3)                      &none                   &kp SEMI    &kp NUMBER_1  &kp N2  &kp N3  &kp BACKSPACE
 &none  &kp LEFT_SHIFT  &ht_hl 2 GRAVE  &ht_hyper LS(LA(LC(LEFT_GUI))) TILDE  &none                   &kp COLON   &kp N4        &kp N5  &kp N6  &kp BACKSLASH
-&none  &none           &kp PIPE        &kp UNDER                             &none                   &kp PERIOD  &kp N7        &kp N8  &kp N9  &ht_shift RIGHT_SHIFT N0
+&none  &none           &kp PIPE        &kp UNDER                             &kp KP_EQUAL            &kp PERIOD  &kp N7        &kp N8  &kp N9  &ht_shift RIGHT_SHIFT N0
                        &kp LEFT_ALT    &mt LGUI LS(TAB)                      &mt LEFT_CONTROL ENTER  &trans      &trans        &trans
             >;
 
