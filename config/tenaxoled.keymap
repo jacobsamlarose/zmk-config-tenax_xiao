@@ -261,13 +261,13 @@
 
         cmb_ltphold {
             bindings = <&left_taphold RS(RG(LEFT_ARROW)) RG(LEFT)>;
-            key-positions = <17 16>;
+            key-positions = <17 26>;
             layers = <0 2>;
         };
 
         cmb_rtphold {
             bindings = <&rght_taphold RS(RG(RIGHT)) RG(RIGHT)>;
-            key-positions = <17 18>;
+            key-positions = <17 28>;
             layers = <0 2>;
         };
 
@@ -278,7 +278,7 @@
         };
 
         rdup {
-            bindings = <&rght_taphold RS(RG(RIGHT)) RG(RIGHT)>;
+            bindings = <&mc_ellips>;
             key-positions = <28 27>;
             layers = <0 2>;
         };
@@ -428,6 +428,17 @@
                 <&macro_press>,
                 <&kp CAPS &kp LC(BACKSLASH)>,
                 <&macro_release>;
+        };
+
+        mc_ellips: mc_ellips {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp DOT &kp DOT &kp DOT>,
+                <&macro_release>;
+
+            label = "MC_ELLIPS";
         };
 
         hm: homerow_mods {
