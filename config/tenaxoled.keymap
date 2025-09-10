@@ -277,7 +277,7 @@
             layers = <0 2>;
         };
 
-        rdup {
+        cmb_ellips {
             bindings = <&mc_ellips>;
             key-positions = <28 27>;
             layers = <0 2>;
@@ -288,6 +288,18 @@
             key-positions = <17 16 18>;
             timeout-ms = <200>;
             layers = <0>;
+        };
+
+        cmb_briup {
+            bindings = <&kp C_BRI_UP>;
+            key-positions = <6 16>;
+            layers = <4>;
+        };
+
+        cmb_bridown {
+            bindings = <&kp C_BRI_DN>;
+            key-positions = <16 26>;
+            layers = <4>;
         };
     };
 
@@ -433,11 +445,7 @@
         mc_ellips: mc_ellips {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp DOT &kp DOT &kp DOT>,
-                <&macro_release>;
-
+            bindings = <&kp DOT &kp DOT &kp DOT>;
             label = "MC_ELLIPS";
         };
 
