@@ -697,7 +697,7 @@
 &kp LG(LS(NUMBER_3))  &none  &none  &none  &none             &none         &none     &kp C_VOL_UP  &none     &none
 &none                 &none  &none  &none  &none             &kp C_BRI_UP  &kp C_RW  &kp C_VOL_DN  &kp C_FF  &none
 &kp LEFT_ALT          &none  &none  &none  &none             &kp C_BRI_DN  &none     &none         &none     &none
-                             &none  &none  &kp LEFT_CONTROL  &kp C_PP      &trans    &trans
+                             &none  &none  &kp LEFT_CONTROL  &kp C_PP      &trans    &bootloader
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
