@@ -127,7 +127,7 @@
 
         mo_L6 {
             bindings = <&sl 6>;
-            key-positions = <1 2 3>;
+            key-positions = <2 10 13>;
         };
 
         cmb_slideover {
@@ -300,6 +300,11 @@
             bindings = <&kp C_BRI_DN>;
             key-positions = <16 26>;
             layers = <4>;
+        };
+
+        cmb_L6_right {
+            bindings = <&sl 6>;
+            key-positions = <7 16 19>;
         };
     };
 
