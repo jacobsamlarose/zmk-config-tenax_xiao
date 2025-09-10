@@ -126,7 +126,7 @@
         };
 
         mo_L6 {
-            bindings = <&mo 6>;
+            bindings = <&sl 6>;
             key-positions = <1 2 3>;
         };
 
@@ -720,10 +720,10 @@
         Toggle {
             display-name = "6TOG";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &tog 1  &tog 2  &tog 3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &tog 4  &tog 5  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans       &trans      &trans      &tog 1       &tog 2  &tog 3  &trans
+&trans  &trans  &trans  &trans       &trans      &trans      &tog 4       &tog 5  &trans  &trans
+&trans  &trans  &trans  &trans       &trans      &trans      &trans       &trans  &trans  &trans
+                &trans  &bootloader  &sys_reset  &sys_reset  &bootloader  &trans
             >;
 
             label = "6 TG";
