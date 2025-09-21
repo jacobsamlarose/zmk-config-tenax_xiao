@@ -290,15 +290,15 @@
             layers = <0>;
         };
 
-        cmb_briup {
-            bindings = <&kp C_BRI_UP>;
-            key-positions = <6 16>;
+        cmb_arrowrdleft {
+            bindings = <&kp LA(LEFT_ARROW)>;
+            key-positions = <16 17>;
             layers = <4>;
         };
 
-        cmb_bridown {
-            bindings = <&kp C_BRI_DN>;
-            key-positions = <16 26>;
+        cmb_arrowrdright {
+            bindings = <&kp LA(RIGHT_ARROW)>;
+            key-positions = <18 17>;
             layers = <4>;
         };
 
@@ -699,10 +699,10 @@
         media {
             display-name = "4MED";
             bindings = <
-&kp LG(LS(NUMBER_3))  &none  &none  &none  &none             &none         &none     &kp C_VOL_UP  &none     &none
-&none                 &none  &none  &none  &none             &kp C_BRI_UP  &kp C_RW  &kp C_VOL_DN  &kp C_FF  &none
-&kp LEFT_ALT          &none  &none  &none  &none             &kp C_BRI_DN  &none     &none         &none     &none
-                             &none  &none  &kp LEFT_CONTROL  &kp C_PP      &trans    &bootloader
+&kp LG(LS(NUMBER_3))  &none  &none  &none  &none             &none     &kp C_RW      &kp C_VOL_UP  &kp C_FF  &none
+&none                 &none  &none  &none  &none             &none     &kp C_BRI_UP  &kp C_VOL_DN  &none     &none
+&kp LEFT_ALT          &none  &none  &none  &none             &none     &kp C_BRI_DN  &none         &none     &none
+                             &none  &none  &kp LEFT_CONTROL  &kp C_PP  &trans        &bootloader
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
