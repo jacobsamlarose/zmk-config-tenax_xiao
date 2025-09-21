@@ -293,13 +293,13 @@
         cmb_arrowrdleft {
             bindings = <&kp LA(LEFT_ARROW)>;
             key-positions = <16 17>;
-            layers = <4>;
+            layers = <0 2>;
         };
 
         cmb_arrowrdright {
             bindings = <&kp LA(RIGHT_ARROW)>;
             key-positions = <18 17>;
-            layers = <4>;
+            layers = <0 2>;
         };
 
         cmb_L6_right {
