@@ -637,7 +637,7 @@
             #binding-cells = <0>;
             bindings = <&kp RGUI>, <&kp TAB>;
 
-            ignored-key-positions = <20 29 31>;
+            ignored-key-positions = <2 12 20 29 31>;
             label = "SWAPPER";
         };
 
