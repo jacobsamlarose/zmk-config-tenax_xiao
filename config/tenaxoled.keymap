@@ -306,6 +306,16 @@
             bindings = <&sl 6>;
             key-positions = <7 16 19>;
         };
+
+        cmb_bootloader_l {
+            bindings = <&bootloader>;
+            key-positions = <10 20 14 24>;
+        };
+
+        cmb_bootloader_r {
+            bindings = <&bootloader>;
+            key-positions = <15 25 19 29>;
+        };
     };
 
     behaviors {
