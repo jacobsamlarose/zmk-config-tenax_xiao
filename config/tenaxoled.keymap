@@ -308,7 +308,7 @@
         };
 
         cmb_return {
-            bindings = <&kp ENTER>;
+            bindings = <&sk RIGHT_SHIFT>;
             key-positions = <33 34>;
         };
     };
