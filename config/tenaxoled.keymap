@@ -191,8 +191,8 @@
             timeout-ms = <200>;
         };
 
-        combo_a {
-            bindings = <&sk LEFT_SHIFT>;
+        combo_shiftcaps {
+            bindings = <&td_shiftcaps>;
             key-positions = <10 20>;
             layers = <0>;
             timeout-ms = <200>;
@@ -666,6 +666,13 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
+        };
+
+        td_shiftcaps: td_shiftcaps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SHIFTCAPS";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
         };
     };
 
