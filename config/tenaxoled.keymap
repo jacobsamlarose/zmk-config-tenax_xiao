@@ -180,7 +180,7 @@
 
         cmb_swapper {
             bindings = <&ht_swapper 2 0>;
-            key-positions = <2 12>;
+            key-positions = <1 11>;
             layers = <0 1 2>;
         };
 
@@ -307,9 +307,14 @@
             key-positions = <7 16 19>;
         };
 
-        cmb_return {
+        cmb_shift {
             bindings = <&sk RIGHT_SHIFT>;
             key-positions = <33 34>;
+        };
+
+        cmb_return {
+            bindings = <&kp RETURN>;
+            key-positions = <2 12>;
         };
     };
 
@@ -652,7 +657,7 @@
             bindings = <&kp>, <&td_shiftcaps>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             flavor = "balanced";
         };
 
