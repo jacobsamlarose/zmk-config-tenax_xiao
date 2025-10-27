@@ -309,12 +309,17 @@
 
         cmb_bootloader_l {
             bindings = <&bootloader>;
-            key-positions = <10 20 14 24>;
+            key-positions = <1 11 2 12 3 13>;
         };
 
         cmb_bootloader_r {
             bindings = <&bootloader>;
-            key-positions = <15 25 19 29>;
+            key-positions = <6 16 7 17 8 18>;
+        };
+
+        cmb_reset {
+            bindings = <&sys_reset>;
+            key-positions = <1 11 2 12 4 14>;
         };
     };
 
