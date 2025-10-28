@@ -306,6 +306,11 @@
             bindings = <&sl 6>;
             key-positions = <7 16 19>;
         };
+
+        cmb_sk_shft {
+            bindings = <&sk RIGHT_SHIFT>;
+            key-positions = <34 33>;
+        };
     };
 
     behaviors {
