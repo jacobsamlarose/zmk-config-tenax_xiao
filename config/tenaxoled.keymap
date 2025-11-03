@@ -127,6 +127,7 @@
         mo_L6 {
             bindings = <&sl 4>;
             key-positions = <2 10 13>;
+            layers = <0>;
         };
 
         cmb_slideover {
@@ -292,6 +293,7 @@
         cmb_L6_right {
             bindings = <&sl 4>;
             key-positions = <7 16 19>;
+            layers = <0>;
         };
 
         drafts_del_line {
@@ -302,6 +304,7 @@
         cmb_sk_shift {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <2 12>;
+            layers = <0 1>;
         };
     };
 
@@ -691,9 +694,9 @@
             label = "1NMNV";
             display-name = "2NAV";
             bindings = <
-&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD  &none            &macro_displaylocn           &smart_moveline  &none                          &kp ESC
-&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 1 NUMBER_6  &kp COLON   &next_slideover  &left_taphold RA(LEFT) LEFT  &kp UP           &rght_taphold RA(RIGHT) RIGHT  &kp SLASH
-&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0      &macro_switch    &left_taphold LA(LEFT) LEFT  &kp DOWN         &rght_taphold RA(RIGHT) RIGHT  &ht_capsword EQUAL 0
+&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD  &none            &macro_displaylocn           &none     &none                          &kp ESC
+&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 1 NUMBER_6  &kp COLON   &next_slideover  &left_taphold RA(LEFT) LEFT  &kp UP    &rght_taphold RA(RIGHT) RIGHT  &kp SLASH
+&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0      &macro_switch    &left_taphold LA(LEFT) LEFT  &kp DOWN  &rght_taphold RA(RIGHT) RIGHT  &ht_capsword EQUAL 0
                                                         &trans        &trans             &trans      &mo 3            &trans                       &trans
             >;
 
