@@ -694,7 +694,7 @@
 
         NUMNAV {
             label = "1NMNV";
-            display-name = "2NAV";
+            display-name = "1NMNV";
             bindings = <
 &kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD  &none            &macro_displaylocn           &none     &none                          &kp ESC
 &kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 1 NUMBER_6  &kp COLON   &next_slideover  &left_taphold RA(LEFT) LEFT  &kp UP    &rght_taphold RA(RIGHT) RIGHT  &kp SLASH
@@ -707,7 +707,7 @@
 
         SYM_MED {
             label = "2SYME";
-            display-name = "1SYN";
+            display-name = "2SYM";
             bindings = <
 &none  &kp EXCL        &kp AT_SIGN     &kp LA(NUMBER_3)                      &none         &kp RS(RG(NUMBER_3))  &kp C_RW      &kp C_VOL_UP  &kp C_FF  &none
 &none  &kp LEFT_SHIFT  &ht_hl 1 GRAVE  &ht_hyper LS(LA(LC(LEFT_GUI))) TILDE  &none         &none                 &kp C_BRI_UP  &kp C_VOL_DN  &none     &none
@@ -720,7 +720,7 @@
 
         SHORTS {
             label = "3SHORT";
-            display-name = "5OS";
+            display-name = "3SHRT";
             bindings = <
 &none  &none     &none         &none         &none      &macro_displaylocn  &none                             &none             &none                           &none
 &none  &FN_left  &FN_up        &FN_right     &none      &none               &left_taphold LG(L) LG(NUMBER_1)  &kp LG(LA(UP))    &left_taphold LG(LA(L)) LG(N0)  &none
@@ -733,7 +733,7 @@
 
         BOARD {
             label = "4BOARD";
-            display-name = "3BT";
+            display-name = "4BRD";
             bindings = <
 &bt BT0        &bt BT1        &bt BT2           &bt BT3        &bt BT4        &kp F1      &kp F2       &kp F3             &kp F4  &kp F5
 &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2     &bt BT_DISC 3  &bt BT_DISC 4  &kp F6      &kp F7       &kp F8             &kp F9  &kp F10
