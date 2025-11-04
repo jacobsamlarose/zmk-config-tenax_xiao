@@ -144,7 +144,7 @@
         };
 
         cmb_l5 {
-            bindings = <&mo 1>;
+            bindings = <&mo 3>;
             key-positions = <12 13>;
             timeout-ms = <200>;
             layers = <0>;
@@ -683,7 +683,7 @@
             display-name = "0DFL";
             bindings = <
 &kp Q                  &kp W  &kp E       &kp R           &kp T             &kp Y        &kp U                              &kp I       &kp O    &kp P
-&ht_hl 2 A             &kp S  &ht_hl 3 D  &hm LEFT_GUI F  &kp G             &kp H        &ht_hyper LS(LA(LC(RIGHT_GUI))) J  &ht_hl 3 K  &kp L    &ht_hl 2 APOS
+&ht_hl 2 A             &kp S  &ht_hl 1 D  &hm LEFT_GUI F  &kp G             &kp H        &ht_hyper LS(LA(LC(RIGHT_GUI))) J  &ht_hl 3 K  &kp L    &ht_hl 2 APOS
 &ht_kpkp LEFT_SHIFT Z  &kp X  &kp C       &kp V           &ht_hl 4 B        &kp N        &kp M                              &td_semic   &kp DOT  &sk RIGHT_SHIFT
                               &td_esc     &mt LGUI TAB    &mt LCTRL RETURN  &lt 1 SPACE  &td_shiftcaps                      &kp CAPS
             >;
@@ -697,7 +697,7 @@
             display-name = "1NMNV";
             bindings = <
 &kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD  &none            &macro_displaylocn           &none     &none                          &kp ESC
-&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 1 NUMBER_6  &kp COLON   &next_slideover  &left_taphold RA(LEFT) LEFT  &kp UP    &rght_taphold RA(RIGHT) RIGHT  &kp SLASH
+&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 3 NUMBER_6  &kp COLON   &next_slideover  &left_taphold RA(LEFT) LEFT  &kp UP    &rght_taphold RA(RIGHT) RIGHT  &kp SLASH
 &ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0      &macro_switch    &left_taphold LA(LEFT) LEFT  &kp DOWN  &rght_taphold RA(RIGHT) RIGHT  &ht_shift RIGHT_SHIFT EQUAL
                                                         &trans        &trans             &trans      &mo 3            &trans                       &trans
             >;
