@@ -202,6 +202,7 @@
             bindings = <&kp C_PLAY_PAUSE>;
             key-positions = <17 7>;
             timeout-ms = <200>;
+            layers = <2>;
         };
 
         cmb_navtog {
@@ -299,6 +300,7 @@
         drafts_del_line {
             bindings = <&kp LC(LESS_THAN)>;
             key-positions = <7 17>;
+            layers = <1>;
         };
 
         cmb_sk_shift {
