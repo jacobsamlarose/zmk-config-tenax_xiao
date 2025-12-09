@@ -723,7 +723,7 @@
             display-name = "3SHRT";
             bindings = <
 &none  &none     &none         &none         &none      &macro_displaylocn  &none                             &none             &none                           &none
-&none  &FN_left  &FN_up        &FN_right     &none      &none               &left_taphold LG(L) LG(NUMBER_1)  &kp LG(LA(UP))    &left_taphold LG(LA(L)) LG(N0)  &none
+&none  &FN_left  &FN_up        &FN_right     &none      &none               &left_taphold LG(L) LG(NUMBER_1)  &kp LG(LA(UP))    &left_taphold LG(LA(L)) LG(N0)  &kp LA(LG(EQUAL))
 &none  &FN_left  &FN_down      &FN_right     &none      &none               &kp LG(LEFT_BRACKET)              &kp RG(RA(DOWN))  &kp RG(RBKT)                    &kp RIGHT_SHIFT
                  &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL  &kp C_EJECT         &trans                            &trans
             >;
