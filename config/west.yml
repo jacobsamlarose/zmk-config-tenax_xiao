@@ -19,5 +19,9 @@ manifest:
     - name: zmk-leader-key
       remote: urob
       revision: main      
+    - name: prospector-zmk-module
+      remote: prospector
+      revision: v2.0.0 
+      path: modules/prospector-zmk-module
   self:
     path: config
