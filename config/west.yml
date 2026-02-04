@@ -9,7 +9,7 @@ manifest:
     - name: caksoylar
       url-base: https://github.com/caksoylar
     - name: prospector
-      url-base: https://github.com/t-ogura
+      url-base: https://github.com/jacobsamlarose
   projects:
     - name: zmk
       remote: zmkfirmware
