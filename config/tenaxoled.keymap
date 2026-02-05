@@ -209,7 +209,7 @@
             bindings = <&tog 1>;
             key-positions = <28 27 26>;
             timeout-ms = <200>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         cmb_slash {
