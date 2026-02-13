@@ -274,14 +274,14 @@
         };
 
         cmb_arrowrdleft {
-            bindings = <&kp LA(LEFT_ARROW)>;
-            key-positions = <16 17>;
+            bindings = <&left_taphold LA(RS(LEFT_ARROW)) LA(LEFT_ARROW)>;
+            key-positions = <17 16>;
             layers = <0>;
         };
 
         cmb_arrowrdright {
-            bindings = <&kp LA(RIGHT_ARROW)>;
-            key-positions = <18 17>;
+            bindings = <&rght_taphold RS(RA(RIGHT_ARROW)) RA(RIGHT_ARROW)>;
+            key-positions = <17 18>;
             layers = <0>;
         };
 
