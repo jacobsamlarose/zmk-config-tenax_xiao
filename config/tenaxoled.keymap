@@ -665,6 +665,24 @@
 
             tapping-term-ms = <250>;
         };
+
+        ht_layercaps: ht_layercaps {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_LAYERCAPS";
+            bindings = <&mo>, <&sk>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        td_sksh_mo_caps: td_sksh_mo_caps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SKSH_MO_CAPS";
+            #binding-cells = <0>;
+            bindings = <&ht_layercaps 1 RIGHT_SHIFT>, <&caps_word>;
+
+            tapping-term-ms = <250>;
+        };
     };
 
     macros {
