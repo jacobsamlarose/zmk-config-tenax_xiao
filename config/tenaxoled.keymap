@@ -250,19 +250,13 @@
 
         cmb_ltphold {
             bindings = <&left_taphold RS(RG(LEFT_ARROW)) RG(LEFT)>;
-            key-positions = <17 26>;
+            key-positions = <17 15>;
             layers = <0>;
         };
 
         cmb_rtphold {
             bindings = <&rght_taphold RS(RG(RIGHT)) RG(RIGHT)>;
-            key-positions = <17 28>;
-            layers = <0>;
-        };
-
-        ldup {
-            bindings = <&left_taphold RS(RG(LEFT_ARROW)) RG(LEFT)>;
-            key-positions = <26 27>;
+            key-positions = <17 19>;
             layers = <0>;
         };
 
