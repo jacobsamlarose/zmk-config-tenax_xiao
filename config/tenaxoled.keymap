@@ -250,13 +250,13 @@
 
         cmb_ltphold {
             bindings = <&left_taphold RS(RG(LEFT_ARROW)) RG(LEFT)>;
-            key-positions = <17 15>;
+            key-positions = <17 16>;
             layers = <0>;
         };
 
         cmb_rtphold {
             bindings = <&rght_taphold RS(RG(RIGHT)) RG(RIGHT)>;
-            key-positions = <17 19>;
+            key-positions = <17 18>;
             layers = <0>;
         };
 
@@ -275,13 +275,13 @@
 
         cmb_arrowrdleft {
             bindings = <&left_taphold LA(RS(LEFT_ARROW)) LA(LEFT_ARROW)>;
-            key-positions = <17 16>;
+            key-positions = <17 15>;
             layers = <0>;
         };
 
         cmb_arrowrdright {
             bindings = <&rght_taphold RS(RA(RIGHT_ARROW)) RA(RIGHT_ARROW)>;
-            key-positions = <17 18>;
+            key-positions = <17 19>;
             layers = <0>;
         };
 
