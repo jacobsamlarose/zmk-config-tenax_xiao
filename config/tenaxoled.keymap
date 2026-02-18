@@ -551,6 +551,8 @@
             require-prior-idle-ms = <125>;
             quick-tap-ms = <125>;
             bindings = <&sk>, <&kp>;
+
+            retro-tap;
         };
 
         mod_slash: mod_slash {
