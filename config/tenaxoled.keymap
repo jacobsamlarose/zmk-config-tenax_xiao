@@ -195,7 +195,7 @@
             bindings = <&kp LS(A)>;
             key-positions = <10 20>;
             layers = <0>;
-            timeout-ms = <200>;
+            timeout-ms = <125>;
         };
 
         cmb_pp {
@@ -681,7 +681,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SKMOCP";
             #binding-cells = <0>;
-            bindings = <&ht_layercaps 1 RIGHT_SHIFT>, <&caps_word>;
+            bindings = <&ht_layercaps 1 RA(RC(RG(RIGHT_SHIFT)))>, <&caps_word>;
 
             tapping-term-ms = <250>;
         };
