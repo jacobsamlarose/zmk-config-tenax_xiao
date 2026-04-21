@@ -130,7 +130,7 @@
             layers = <0>;
         };
 
-        cmb_slideover {
+        cmb_altshftctrl {
             bindings = <&sk RA(RS(RCTRL))>;
             key-positions = <16 17>;
             layers = <0>;
@@ -144,7 +144,7 @@
             timeout-ms = <200>;
         };
 
-        cmb_l5 {
+        cmb_l3 {
             bindings = <&mo 3>;
             key-positions = <12 13>;
             timeout-ms = <200>;
@@ -667,7 +667,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SKMOCP";
             #binding-cells = <0>;
-            bindings = <&ht_layercaps 1 RA(RC(RG(RIGHT_SHIFT)))>, <&caps_word>;
+            bindings = <&ht_layercaps 3 RA(RC(RG(RIGHT_SHIFT)))>, <&caps_word>;
 
             tapping-term-ms = <250>;
         };
