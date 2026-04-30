@@ -154,9 +154,9 @@
 
         bsp_del {
             bindings = <&bspc_del>;
-            key-positions = <6 16>;
+            key-positions = <8 18>;
             timeout-ms = <150>;
-            layers = <1>;
+            layers = <0>;
         };
 
         cmb_colon {
@@ -218,7 +218,7 @@
         cmb_bspLine {
             bindings = <&kp RG(BACKSPACE)>;
             key-positions = <6 16>;
-            layers = <3>;
+            layers = <1>;
         };
 
         cmb_shiftlock {
@@ -267,8 +267,8 @@
 
         drafts_del_line {
             bindings = <&kp LC(LESS_THAN)>;
-            key-positions = <8 18>;
-            layers = <1>;
+            key-positions = <6 16>;
+            layers = <3>;
             timeout-ms = <150>;
         };
 
