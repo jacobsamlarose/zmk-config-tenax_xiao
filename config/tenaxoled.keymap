@@ -148,7 +148,7 @@
         cmb_l3 {
             bindings = <&mo 3>;
             key-positions = <12 13>;
-            timeout-ms = <200>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
