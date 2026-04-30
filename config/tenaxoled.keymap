@@ -155,7 +155,7 @@
             bindings = <&bsp_word>;
             key-positions = <6 16>;
             timeout-ms = <200>;
-            layers = <0>;
+            layers = <1>;
         };
 
         cmb_colon {
@@ -287,6 +287,13 @@
             key-positions = <33 34>;
             layers = <0>;
             timeout-ms = <150>;
+        };
+
+        cmb_rskshift {
+            bindings = <&sk RSHIFT>;
+            key-positions = <6 16>;
+            timeout-ms = <200>;
+            layers = <0>;
         };
     };
 
