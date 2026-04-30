@@ -86,22 +86,22 @@
 
         combo_dash {
             timeout-ms = <100>;
-            key-positions = <4 14>;
-            layers = <1>;
+            key-positions = <3 13>;
+            layers = <0>;
             bindings = <&kp MINUS>;
         };
 
         combo_undersc {
             timeout-ms = <100>;
-            key-positions = <4 14>;
-            layers = <1>;
+            key-positions = <14 24>;
+            layers = <0>;
             bindings = <&kp LS(MINUS)>;
         };
 
         combo_emdash {
             timeout-ms = <50>;
             layers = <0>;
-            key-positions = <14 24>;
+            key-positions = <14 4>;
             bindings = <&kp LS(LA(MINUS))>;
         };
 
@@ -154,7 +154,7 @@
 
         bsp_word {
             bindings = <&bsp_word>;
-            key-positions = <8 18>;
+            key-positions = <6 16>;
             timeout-ms = <150>;
             layers = <0>;
         };
@@ -175,9 +175,9 @@
 
         bsp_del {
             bindings = <&bspc_del>;
-            key-positions = <7 17>;
+            key-positions = <6 16>;
             timeout-ms = <200>;
-            layers = <0>;
+            layers = <1>;
         };
 
         combo_dqt {
@@ -217,8 +217,8 @@
 
         cmb_bspLine {
             bindings = <&kp RG(BACKSPACE)>;
-            key-positions = <7 17>;
-            layers = <1>;
+            key-positions = <6 16>;
+            layers = <3>;
         };
 
         cmb_shiftlock {
@@ -274,13 +274,13 @@
 
         cmb_sk_shift {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <3 13>;
+            key-positions = <2 12>;
             layers = <0>;
         };
 
         cmb_rskshift {
             bindings = <&sk RSHIFT>;
-            key-positions = <6 16>;
+            key-positions = <7 17>;
             timeout-ms = <200>;
             layers = <0>;
         };
