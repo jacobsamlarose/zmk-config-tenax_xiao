@@ -152,13 +152,6 @@
             layers = <0>;
         };
 
-        bsp_del {
-            bindings = <&bspc_del>;
-            key-positions = <8 18>;
-            timeout-ms = <150>;
-            layers = <0>;
-        };
-
         cmb_colon {
             bindings = <&kp COLON>;
             key-positions = <16 26>;
@@ -173,8 +166,8 @@
             layers = <0>;
         };
 
-        bsp_th {
-            bindings = <&th_delbsp 0 0>;
+        cmb_bsp_del {
+            bindings = <&bspc_del>;
             key-positions = <6 16>;
             timeout-ms = <150>;
             layers = <0>;
@@ -218,7 +211,7 @@
         cmb_bspLine {
             bindings = <&kp RG(BACKSPACE)>;
             key-positions = <6 16>;
-            layers = <1>;
+            layers = <3>;
         };
 
         cmb_shiftlock {
@@ -268,7 +261,7 @@
         drafts_del_line {
             bindings = <&kp LC(LESS_THAN)>;
             key-positions = <6 16>;
-            layers = <3>;
+            layers = <2>;
             timeout-ms = <150>;
         };
 
@@ -288,6 +281,13 @@
         cmb_mo3 {
             bindings = <&sl 3>;
             key-positions = <34 33>;
+        };
+
+        cmb_bspword {
+            bindings = <&bsp_word>;
+            key-positions = <6 16>;
+            layers = <1>;
+            timeout-ms = <150>;
         };
     };
 
