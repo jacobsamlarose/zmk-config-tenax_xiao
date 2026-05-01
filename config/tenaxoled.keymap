@@ -289,6 +289,13 @@
             layers = <1>;
             timeout-ms = <150>;
         };
+
+        cmb_switch {
+            bindings = <&macro_switch>;
+            key-positions = <8 18>;
+            layers = <1>;
+            timeout-ms = <150>;
+        };
     };
 
     behaviors {
