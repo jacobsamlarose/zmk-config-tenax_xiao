@@ -293,7 +293,7 @@
         cmb_switch {
             bindings = <&macro_switch>;
             key-positions = <8 18>;
-            layers = <1>;
+            layers = <0>;
             timeout-ms = <150>;
         };
     };
