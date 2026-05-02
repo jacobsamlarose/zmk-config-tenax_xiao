@@ -292,7 +292,7 @@
         cmb_switch {
             bindings = <&macro_switch>;
             key-positions = <8 18>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <150>;
         };
 
@@ -464,6 +464,18 @@
                 <&mo 0 &kp LEFT_SHIFT>;
 
             label = "LAYER_MODIFIER";
+        };
+
+        macro_accentrep: macro_accentrep {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&key_repeat>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LEFT &kp BSPC>;
+
+            label = "MACRO_ACCENTREP";
         };
 
         hm: homerow_mods {
@@ -702,7 +714,7 @@
         ht_repeat: ht_repeat {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_REPEAT";
-            bindings = <&key_repeat>, <&kp>;
+            bindings = <&macro_accentrep>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
