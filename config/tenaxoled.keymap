@@ -654,7 +654,7 @@
             #binding-cells = <0>;
             bindings = <&kp I>, <&mcr_capi_space>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
         };
     };
 
