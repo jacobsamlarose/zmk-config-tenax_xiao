@@ -305,6 +305,12 @@
             bindings = <&kp Q>;
             key-positions = <0 10>;
         };
+
+        cmb_alt_bspword {
+            bindings = <&bsp_word>;
+            key-positions = <16 17 6>;
+            timeout-ms = <200>;
+        };
     };
 
     behaviors {
