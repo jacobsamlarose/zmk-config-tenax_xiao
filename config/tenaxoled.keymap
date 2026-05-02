@@ -482,7 +482,9 @@
                 <&macro_release>,
                 <&key_repeat>,
                 <&macro_tap>,
-                <&kp LEFT &kp BSPC>;
+                <&kp LEFT>,
+                <&macro_tap>,
+                <&kp BSPC>;
 
             label = "MACRO_ACCENTREP";
         };
