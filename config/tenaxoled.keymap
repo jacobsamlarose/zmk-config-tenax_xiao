@@ -704,16 +704,6 @@
             flavor = "tap-preferred";
         };
 
-        ht_repeat: ht_repeat {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_REPEAT";
-            bindings = <&macro_accentrep>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <250>;
-        };
-
         td_i: td_i {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_I";
