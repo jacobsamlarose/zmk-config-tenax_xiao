@@ -168,7 +168,7 @@
 
         cmb_bsp_del {
             bindings = <&bspc_del>;
-            key-positions = <16 6>;
+            key-positions = <7 17>;
             timeout-ms = <150>;
             layers = <0>;
         };
@@ -210,7 +210,7 @@
 
         cmb_bspLine {
             bindings = <&kp RG(BACKSPACE)>;
-            key-positions = <6 16 7 17>;
+            key-positions = <16 17 7>;
             layers = <0>;
         };
 
@@ -260,21 +260,14 @@
 
         drafts_del_line {
             bindings = <&kp LC(LESS_THAN)>;
-            key-positions = <6 16 7 17>;
-            layers = <1>;
+            key-positions = <16 17 6>;
+            layers = <0>;
             timeout-ms = <200>;
         };
 
         cmb_sk_shift {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <2 12>;
-            layers = <0>;
-        };
-
-        cmb_rskshift {
-            bindings = <&sk RSHIFT>;
-            key-positions = <7 17>;
-            timeout-ms = <200>;
             layers = <0>;
         };
 
@@ -285,7 +278,7 @@
 
         cmb_bspword {
             bindings = <&bsp_word>;
-            key-positions = <16 7 17>;
+            key-positions = <16 6>;
             timeout-ms = <200>;
         };
 
@@ -306,10 +299,10 @@
             key-positions = <0 10>;
         };
 
-        cmb_alt_bspword {
-            bindings = <&bsp_word>;
-            key-positions = <16 17 6>;
-            timeout-ms = <200>;
+        cmb_sk_rshift {
+            bindings = <&sk RIGHT_SHIFT>;
+            key-positions = <8 18>;
+            layers = <0>;
         };
     };
 
