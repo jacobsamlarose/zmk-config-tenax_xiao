@@ -133,7 +133,7 @@
 
         cmb_altshftctrl {
             bindings = <&sk RA(RS(RCTRL))>;
-            key-positions = <16 17>;
+            key-positions = <17 16>;
             layers = <0>;
             timeout-ms = <150>;
         };
@@ -210,7 +210,7 @@
 
         cmb_bspLine {
             bindings = <&kp RG(BACKSPACE)>;
-            key-positions = <16 17 6>;
+            key-positions = <16 17 7>;
             layers = <0>;
         };
 
@@ -252,7 +252,7 @@
             layers = <0>;
         };
 
-        cmb_L6_right {
+        cmb_L4_right {
             bindings = <&sl 4>;
             key-positions = <7 16 19>;
             layers = <0>;
@@ -297,12 +297,6 @@
         cmb_lazy_q {
             bindings = <&kp Q>;
             key-positions = <0 10>;
-        };
-
-        cmb_sk_rshift {
-            bindings = <&sk RIGHT_SHIFT>;
-            key-positions = <8 18>;
-            layers = <0>;
         };
     };
 
@@ -700,7 +694,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SKMOCP";
             #binding-cells = <0>;
-            bindings = <&ht_layercaps 3 RA(RC(RG(RIGHT_SHIFT)))>, <&caps_word>;
+            bindings = <&sk RIGHT_SHIFT>, <&caps_word>;
 
             tapping-term-ms = <250>;
         };
@@ -735,10 +729,10 @@
         default {
             display-name = "0DFL";
             bindings = <
-&kp Q                  &kp W                                 &kp E       &ht_repeat 0 R  &kp T             &kp Y        &kp U                              &kp I       &kp O    &kp P
-&ht_hl 2 A             &ht_hyper LS(LA(LC(LEFT_COMMAND))) S  &ht_hl 1 D  &hm LEFT_GUI F  &kp G             &kp H        &ht_hyper LS(LA(LC(RIGHT_GUI))) J  &ht_hl 3 K  &kp L    &ht_hl 2 APOS
-&ht_kpkp LEFT_SHIFT Z  &kp X                                 &kp C       &kp V           &ht_hl 4 B        &kp N        &kp M                              &td_semic   &kp DOT  &sk RIGHT_SHIFT
-                                                             &td_esc     &mt LGUI TAB    &mt LCTRL RETURN  &lt 1 SPACE  &td_skmocp                         &kp CAPS
+&kp Q                  &kp W  &kp E       &ht_repeat 0 R                    &kp T             &kp Y        &kp U                              &kp I       &kp O    &kp P
+&ht_hl 2 A             &kp S  &ht_hl 1 D  &ht_hyper LC(LA(LS(LEFT_GUI))) F  &hm LCMD G        &kp H        &ht_hyper LS(LA(LC(RIGHT_GUI))) J  &ht_hl 3 K  &kp L    &ht_hl 2 APOS
+&ht_kpkp LEFT_SHIFT Z  &kp X  &kp C       &kp V                             &ht_hl 4 B        &kp N        &kp M                              &td_semic   &kp DOT  &sk RIGHT_SHIFT
+                              &td_esc     &mt LGUI TAB                      &mt LCTRL RETURN  &lt 1 SPACE  &td_skmocp                         &kp CAPS
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
