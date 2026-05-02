@@ -278,7 +278,7 @@
 
         cmb_bspword {
             bindings = <&bsp_word>;
-            key-positions = <16 17 7>;
+            key-positions = <16 6>;
             timeout-ms = <200>;
         };
 
@@ -301,7 +301,7 @@
 
         cmb_sk_rshift {
             bindings = <&sk RIGHT_SHIFT>;
-            key-positions = <6 16>;
+            key-positions = <8 18>;
             layers = <0>;
         };
     };
@@ -469,11 +469,15 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &key_repeat>,
+                <&macro_press>,
+                <&key_repeat>,
                 <&macro_pause_for_release>,
-                <&macro_release &key_repeat>,
-                <&macro_tap &kp LEFT>,
-                <&macro_tap &kp BSPC>;
+                <&macro_release>,
+                <&key_repeat>,
+                <&macro_tap>,
+                <&kp LEFT>,
+                <&macro_tap>,
+                <&kp BSPC>;
 
             label = "MACRO_ACCENTREP";
         };
