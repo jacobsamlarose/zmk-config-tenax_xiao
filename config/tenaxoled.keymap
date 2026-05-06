@@ -272,7 +272,7 @@
         };
 
         cmb_mo3 {
-            bindings = <&sl 3>;
+            bindings = <&sk RSHIFT>;
             key-positions = <34 33>;
         };
 
