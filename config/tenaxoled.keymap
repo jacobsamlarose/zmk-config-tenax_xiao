@@ -603,8 +603,8 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <180>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
             quick-tap-ms = <125>;
             require-prior-idle-ms = <80>;
         };
