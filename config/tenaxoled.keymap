@@ -173,8 +173,8 @@
             timeout-ms = <200>;
         };
 
-        cmb_cap_a {
-            bindings = <&kp LS(A)>;
+        cmb_pinky_skshift {
+            bindings = <&sk LEFT_SHIFT>;
             key-positions = <10 20>;
             layers = <0>;
             timeout-ms = <125>;
@@ -604,7 +604,9 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <120>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <125>;
+            require-prior-idle-ms = <125>;
         };
 
         td_shlock_movlock: td_shlock_movlock {
