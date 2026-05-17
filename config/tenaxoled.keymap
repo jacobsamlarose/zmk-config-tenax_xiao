@@ -603,10 +603,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <160>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
             quick-tap-ms = <125>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <80>;
         };
 
         td_shlock_movlock: td_shlock_movlock {
