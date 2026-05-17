@@ -173,8 +173,8 @@
             timeout-ms = <200>;
         };
 
-        cmb_pinky_skshift {
-            bindings = <&sk LEFT_SHIFT>;
+        cmb_cap_a {
+            bindings = <&kp LS(A)>;
             key-positions = <10 20>;
             layers = <0>;
             timeout-ms = <125>;
