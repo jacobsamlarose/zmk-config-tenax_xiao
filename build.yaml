@@ -1,11 +1,11 @@
 include:
   - board: seeeduino_xiao_ble
     shield: tenaxoled_left
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME="TenaxBlack"
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME='"TenaxBlack"'
     artifact-name: tenaxBlack_left
   - board: seeeduino_xiao_ble
     shield: tenaxoled_left
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME="TenaxWhite"
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME='"TenaxWhite"'
     artifact-name: tenaxWhite_left
   - board: seeeduino_xiao_ble
     shield: tenaxoled_right
