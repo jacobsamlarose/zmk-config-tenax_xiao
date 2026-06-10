@@ -1,15 +1,20 @@
 include:
   - board: seeeduino_xiao_ble
     shield: tenaxoled_left
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME='"TenaxBlack"'
+    cmake-args: >-
+      -DCONFIG_ZMK_KEYBOARD_NAME='"TenaxBlack"'
+      -DCONFIG_ZMK_STATUS_ADV_KEYBOARD_NAME='"TenaxBlack"'
     artifact-name: tenaxBlack_left
   - board: seeeduino_xiao_ble
     shield: tenaxoled_left
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME='"TenaxWhite"'
+    cmake-args: >-
+      -DCONFIG_ZMK_KEYBOARD_NAME='"TenaxWhite"'
+      -DCONFIG_ZMK_STATUS_ADV_KEYBOARD_NAME='"TenaxWhite"'
     artifact-name: tenaxWhite_left
   - board: seeeduino_xiao_ble
     shield: tenaxoled_right
   - board: seeeduino_xiao_ble
     shield: settings_reset
+
 
 # there is no settingsreset (needed) for the XIAO
