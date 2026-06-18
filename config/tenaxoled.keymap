@@ -275,8 +275,8 @@
             key-positions = <12 2>;
         };
 
-        cmb_skshift {
-            bindings = <&sk LC(LEFT_SHIFT)>;
+        cmb_return {
+            bindings = <&kp LC(ENTER)>;
             key-positions = <31 32>;
             layers = <0>;
             timeout-ms = <200>;
@@ -661,10 +661,10 @@
         default {
             display-name = "0DFL";
             bindings = <
-&kp Q                  &kp W       &kp E       &kp R           &kp T             &kp Y        &kp U                              &kp I       &kp O    &kp P
-&ht_hl 2 A             &ht_hl 1 S  &ht_hl 3 D  &hm LEFT_GUI F  &kp G             &kp H        &ht_hyper LS(LA(LC(RIGHT_GUI))) J  &ht_hl 3 K  &kp L    &ht_hl 2 APOS
-&ht_kpkp LEFT_SHIFT Z  &kp X       &kp C       &kp V           &ht_hl 4 B        &kp N        &kp M                              &td_semic   &kp DOT  &kp RIGHT_SHIFT
-                                   &td_esc     &mt LGUI TAB    &mt LCTRL RETURN  &lt 1 SPACE  &td_skmocp                         &kp GLOBE
+&kp Q                  &kp W       &kp E       &kp R           &kp T                      &kp Y        &kp U                              &kp I       &kp O    &kp P
+&ht_hl 2 A             &ht_hl 1 S  &ht_hl 3 D  &hm LEFT_GUI F  &kp G                      &kp H        &ht_hyper LS(LA(LC(RIGHT_GUI))) J  &ht_hl 3 K  &kp L    &ht_hl 2 APOS
+&ht_kpkp LEFT_SHIFT Z  &kp X       &kp C       &kp V           &ht_hl 4 B                 &kp N        &kp M                              &td_semic   &kp DOT  &kp RIGHT_SHIFT
+                                   &td_esc     &mt LGUI TAB    &ht_skkp LCTRL LEFT_SHIFT  &lt 1 SPACE  &td_skmocp                         &kp GLOBE
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -688,10 +688,10 @@
             label = "2SYME";
             display-name = "2SYM";
             bindings = <
-&none  &kp EXCL        &kp AT_SIGN     &kp LA(NUMBER_3)                      &none           &kp RS(RG(NUMBER_3))  &kp C_RW      &kp C_VOL_UP  &kp C_FF    &none
-&none  &kp LEFT_SHIFT  &ht_hl 1 GRAVE  &ht_hyper LS(LA(LC(LEFT_GUI))) TILDE  &none           &none                 &kp C_BRI_UP  &kp C_VOL_DN  &none       &none
-&none  &none           &kp PIPE        &kp UNDER                             &kp KP_EQUAL    &none                 &kp C_BRI_DN  &none         &mc_ellips  &none
-                       &trans          &kp ENTER                             &sk LEFT_SHIFT  &trans                &trans        &trans
+&none  &kp EXCL        &kp AT_SIGN     &kp LA(NUMBER_3)                      &none         &kp RS(RG(NUMBER_3))  &kp C_RW      &kp C_VOL_UP  &kp C_FF    &none
+&none  &kp LEFT_SHIFT  &ht_hl 1 GRAVE  &ht_hyper LS(LA(LC(LEFT_GUI))) TILDE  &none         &none                 &kp C_BRI_UP  &kp C_VOL_DN  &none       &none
+&none  &none           &kp PIPE        &kp UNDER                             &kp KP_EQUAL  &none                 &kp C_BRI_DN  &none         &mc_ellips  &none
+                       &trans          &trans                                &kp RETURN    &trans                &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LS(Z)) LG(Z)>;
