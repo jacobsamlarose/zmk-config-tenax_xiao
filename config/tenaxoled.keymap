@@ -276,7 +276,7 @@
         };
 
         cmb_return {
-            bindings = <&kp LC(ENTER)>;
+            bindings = <&kp ENTER>;
             key-positions = <31 32>;
             layers = <0>;
             timeout-ms = <200>;
@@ -285,6 +285,13 @@
         cmb_meh {
             bindings = <&sk LS(LA(LCTRL))>;
             key-positions = <2 12 13>;
+        };
+
+        cmb_ctrlenter {
+            bindings = <&kp LC(ENTER)>;
+            key-positions = <31 32>;
+            timeout-ms = <200>;
+            layers = <2>;
         };
     };
 
