@@ -300,6 +300,20 @@
             timeout-ms = <125>;
             layers = <0>;
         };
+
+        cmb_arrword_left {
+            bindings = <&left_taphold RS(RA(LEFT_ARROW)) RA(LEFT)>;
+            key-positions = <26 27>;
+            timeout-ms = <150>;
+            layers = <1>;
+        };
+
+        cmb_arrword_right {
+            bindings = <&rght_taphold RS(RA(RIGHT)) RA(RIGHT)>;
+            key-positions = <27 28>;
+            timeout-ms = <150>;
+            layers = <1>;
+        };
     };
 
     behaviors {
