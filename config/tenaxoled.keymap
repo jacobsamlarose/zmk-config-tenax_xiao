@@ -303,16 +303,16 @@
 
         cmb_arrword_left {
             bindings = <&left_taphold RS(RA(LEFT_ARROW)) RA(LEFT)>;
-            key-positions = <26 27>;
+            key-positions = <16 17>;
             timeout-ms = <150>;
-            layers = <1>;
+            layers = <1 0>;
         };
 
         cmb_arrword_right {
             bindings = <&rght_taphold RS(RA(RIGHT)) RA(RIGHT)>;
-            key-positions = <27 28>;
+            key-positions = <17 18>;
             timeout-ms = <150>;
-            layers = <1>;
+            layers = <1 0>;
         };
     };
 
