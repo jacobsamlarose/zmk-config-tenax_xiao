@@ -298,7 +298,7 @@
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <13 12>;
             timeout-ms = <125>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         cmb_arrword_left {
