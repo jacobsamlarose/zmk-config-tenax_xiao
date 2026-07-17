@@ -295,11 +295,10 @@
         };
 
         cmb_hrskshift {
-            bindings = <&ht_skshiftshift LEFT_SHIFT LEFT_SHIFT>;
+            bindings = <&sk LEFT_SHIFT>;
             key-positions = <13 12>;
             timeout-ms = <125>;
             layers = <0>;
-            slow-release;
         };
 
         cmb_arrword_left {
