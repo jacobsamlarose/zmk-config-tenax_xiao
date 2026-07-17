@@ -36,7 +36,7 @@
     quick-release;
 };
 
-&caps_word { continue-list = <UNDERSCORE MINUS SPACE BACKSPACE>; };
+&caps_word { continue-list = <UNDERSCORE MINUS BACKSPACE>; };
 
 / {
     combos {
