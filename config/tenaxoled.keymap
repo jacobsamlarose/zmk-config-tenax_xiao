@@ -309,7 +309,7 @@
         };
 
         cmb_arrword_right {
-            bindings = <&kp RS(RA(RIGHT))>;
+            bindings = <&kp RS(RA(RIGHT_ARROW))>;
             key-positions = <17 18>;
             timeout-ms = <150>;
             layers = <1 0>;
