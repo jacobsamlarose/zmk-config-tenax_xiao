@@ -302,14 +302,14 @@
         };
 
         cmb_arrword_left {
-            bindings = <&left_taphold RS(RA(LEFT_ARROW)) RA(LEFT)>;
+            bindings = <&kp RS(RA(LEFT_ARROW))>;
             key-positions = <16 17>;
             timeout-ms = <150>;
             layers = <1 0>;
         };
 
         cmb_arrword_right {
-            bindings = <&rght_taphold RS(RA(RIGHT)) RA(RIGHT)>;
+            bindings = <&kp RS(RA(RIGHT))>;
             key-positions = <17 18>;
             timeout-ms = <150>;
             layers = <1 0>;
