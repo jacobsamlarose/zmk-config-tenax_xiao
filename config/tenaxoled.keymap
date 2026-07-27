@@ -724,8 +724,8 @@
             label = "1NMNV";
             display-name = "1NMNV";
             bindings = <
-&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD  &macro_slideover  &macro_displaylocn           &swapper  &macro_switch                  &kp ESC
-&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 3 NUMBER_6  &kp COLON   &next_slideover   &left_taphold RA(LEFT) LEFT  &kp UP    &rght_taphold RA(RIGHT) RIGHT  &kp SLASH
+&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD  &none             &macro_displaylocn           &swapper  &macro_switch                  &kp ESC
+&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 3 NUMBER_6  &kp COLON   &macro_slideover  &left_taphold RA(LEFT) LEFT  &kp UP    &rght_taphold RA(RIGHT) RIGHT  &kp SLASH
 &ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0      &macro_switch     &left_taphold LA(LEFT) LEFT  &kp DOWN  &rght_taphold RA(RIGHT) RIGHT  &ht_shift RIGHT_SHIFT EQUAL
                                                         &trans        &trans             &trans      &mo 3             &trans                       &trans
             >;
