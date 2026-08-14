@@ -377,7 +377,7 @@
                 <&macro_tap>,
                 <&kp GRAVE>,
                 <&macro_release>,
-                <&kp GLOBE>,
+                <&kp GLOBE>;
         };
 
         FN_up: FN_up {
@@ -390,7 +390,7 @@
                 <&macro_tap>,
                 <&kp UP_ARROW>,
                 <&macro_release>,
-                <&kp GLOBE>,
+                <&kp GLOBE>;
         };
 
         FN_down: FN_down {
@@ -403,7 +403,7 @@
                 <&macro_tap>,
                 <&kp DOWN>,
                 <&macro_release>,
-                <&kp GLOBE>,
+                <&kp GLOBE>;
         };
 
         FN_left: FN_left {
@@ -416,7 +416,7 @@
                 <&macro_tap>,
                 <&kp LEFT>,
                 <&macro_release>,
-                <&kp GLOBE>,
+                <&kp GLOBE>;
         };
 
         FN_right: FN_right {
@@ -429,7 +429,7 @@
                 <&macro_tap>,
                 <&kp RIGHT>,
                 <&macro_release>,
-                <&kp GLOBE>,
+                <&kp GLOBE>;
         };
 
         next_slideover: next_slideover {
