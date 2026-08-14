@@ -373,11 +373,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp CAPS>,
+                <&kp GLOBE>,
                 <&macro_tap>,
                 <&kp GRAVE>,
                 <&macro_release>,
-                <&kp CAPS>;
+                <&kp GLOBE>,
         };
 
         FN_up: FN_up {
@@ -386,11 +386,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp CAPS>,
+                <&kp GLOBE>,
                 <&macro_tap>,
                 <&kp UP_ARROW>,
                 <&macro_release>,
-                <&kp CAPS>;
+                <&kp GLOBE>,
         };
 
         FN_down: FN_down {
@@ -399,11 +399,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp CAPS>,
+                <&kp GLOBE>,
                 <&macro_tap>,
                 <&kp DOWN>,
                 <&macro_release>,
-                <&kp CAPS>;
+                <&kp GLOBE>,
         };
 
         FN_left: FN_left {
@@ -412,11 +412,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp CAPS>,
+                <&kp GLOBE>,
                 <&macro_tap>,
                 <&kp LEFT>,
                 <&macro_release>,
-                <&kp CAPS>;
+                <&kp GLOBE>,
         };
 
         FN_right: FN_right {
@@ -425,11 +425,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp CAPS>,
+                <&kp GLOBE>,
                 <&macro_tap>,
                 <&kp RIGHT>,
                 <&macro_release>,
-                <&kp CAPS>;
+                <&kp GLOBE>,
         };
 
         next_slideover: next_slideover {
@@ -438,11 +438,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp CAPS &kp LCMD>,
+                <&kp GLOBE &kp LCMD>,
                 <&macro_tap>,
                 <&kp BSLH>,
                 <&macro_release>,
-                <&kp CAPS &kp LCMD>;
+                <&kp GLOBE &kp LCMD>;
         };
 
         macro_displaylocn: macro_displaylocn {
@@ -451,7 +451,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp CAPS &kp LC(BACKSLASH)>,
+                <&kp GLOBE &kp LC(BACKSLASH)>,
                 <&macro_release>;
         };
 
