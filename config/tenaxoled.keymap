@@ -294,8 +294,8 @@
             layers = <2>;
         };
 
-        cmb_hrskshift {
-            bindings = <&sk LEFT_SHIFT>;
+        cmb_tab {
+            bindings = <&kp TAB>;
             key-positions = <13 12>;
             timeout-ms = <125>;
             layers = <0 1>;
@@ -676,7 +676,7 @@
             bindings = <&kp>, <&sk>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
         };
 
         z_sft: z_sft {
@@ -690,15 +690,6 @@
             hold-trigger-key-positions = <30 31 32 33>;
             hold-trigger-on-release;
         };
-
-        ht_skshiftshift: ht_skshiftshift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_SKSHIFTSHIFT";
-            bindings = <&kp>, <&sk>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-        };
     };
 
     macros {
@@ -710,10 +701,10 @@
         default {
             display-name = "0DFL";
             bindings = <
-&kp Q                &kp W       &kp E       &kp R           &kp T            &kp Y        &kp U                              &kp I       &kp O    &kp P
-&ht_hl 2 A           &ht_hl 1 S  &ht_hl 3 D  &hm LEFT_GUI F  &kp G            &kp H        &ht_hyper LS(LA(LC(RIGHT_GUI))) J  &ht_hl 3 K  &kp L    &ht_hl 2 APOS
-&z_sft LEFT_SHIFT Z  &kp X       &kp C       &kp V           &ht_hl 4 B       &kp N        &kp M                              &td_semic   &kp DOT  &kp RIGHT_SHIFT
-                                 &td_esc     &mt LGUI TAB    &mt LCTRL ENTER  &lt 1 SPACE  &td_skmocp                         &kp GLOBE
+&kp Q                &kp W       &kp E       &kp R                     &kp T            &kp Y        &kp U                              &kp I       &kp O    &kp P
+&ht_hl 2 A           &ht_hl 1 S  &ht_hl 3 D  &hm LEFT_GUI F            &kp G            &kp H        &ht_hyper LS(LA(LC(RIGHT_GUI))) J  &ht_hl 3 K  &kp L    &ht_hl 2 APOS
+&z_sft LEFT_SHIFT Z  &kp X       &kp C       &kp V                     &ht_hl 4 B       &kp N        &kp M                              &td_semic   &kp DOT  &kp RIGHT_SHIFT
+                                 &td_esc     &ht_skkp LGUI LEFT_SHIFT  &mt LCTRL ENTER  &lt 1 SPACE  &td_skmocp                         &kp GLOBE
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
