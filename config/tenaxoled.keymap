@@ -613,7 +613,7 @@
             #binding-cells = <0>;
             bindings = <&kp RGUI>, <&kp TAB>;
 
-            ignored-key-positions = <2 12 20 29 31>;
+            ignored-key-positions = <2 10 12 17 20 29 31>;
             label = "SWAPPER";
         };
 
@@ -674,6 +674,15 @@
             hold-trigger-key-positions = <30 31 32 33>;
             hold-trigger-on-release;
         };
+
+        reverse_swapper: reverse_swapper {
+            compatible = "zmk,behavior-smart-toggle";
+            #binding-cells = <0>;
+            bindings = <&kp RGUI>, <&kp LS(TAB)>;
+
+            ignored-key-positions = <2 12 14 17 20 29 31>;
+            label = "REVERSE_SWAPPER";
+        };
     };
 
     macros {
@@ -725,10 +734,10 @@
             label = "3SHORT";
             display-name = "3SHRT";
             bindings = <
-&none            &none        &none         &none         &none        &macro_displaylocn  &none                             &none             &none                           &none
-&kp LG(LS(TAB))  &kp LS(TAB)  &FN_up        &kp TAB       &kp LG(TAB)  &none               &left_taphold LG(L) LG(NUMBER_1)  &kp LG(LA(UP))    &left_taphold LG(LA(L)) LG(N0)  &kp LA(LG(EQUAL))
-&kp LSHFT        &FN_left     &FN_down      &FN_right     &none        &none               &kp LG(LEFT_BRACKET)              &kp RG(RA(DOWN))  &kp RG(RBKT)                    &kp RIGHT_SHIFT
-                              &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL    &kp C_EJECT         &trans                            &trans
+&none             &none        &none         &none         &none      &macro_displaylocn  &none                             &none             &none                           &none
+&reverse_swapper  &kp LS(TAB)  &FN_up        &kp TAB       &swapper   &none               &left_taphold LG(L) LG(NUMBER_1)  &kp LG(LA(UP))    &left_taphold LG(LA(L)) LG(N0)  &kp LA(LG(EQUAL))
+&kp LSHFT         &FN_left     &FN_down      &FN_right     &none      &none               &kp LG(LEFT_BRACKET)              &kp RG(RA(DOWN))  &kp RG(RBKT)                    &kp RIGHT_SHIFT
+                               &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL  &kp C_EJECT         &trans                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
