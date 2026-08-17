@@ -275,9 +275,9 @@
             key-positions = <12 2>;
         };
 
-        cmb_skshift {
-            bindings = <&ht_kpkp LC(LCMD) TAB>;
-            key-positions = <31 32>;
+        cmb_tab {
+            bindings = <&kp TAB>;
+            key-positions = <13 12>;
             layers = <0>;
             timeout-ms = <200>;
         };
