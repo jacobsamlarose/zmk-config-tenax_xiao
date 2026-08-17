@@ -319,12 +319,12 @@
             ignored-key-positions = <7 17 27>;
         };
 
-        td_esc: tap_dance_esc {
+        td_tab: tap_dance_tab {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_ESC";
+            label = "TAP_DANCE_tab";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LALT>, <&kp ESC>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LALT>, <&kp TAB>;
         };
 
         macro_slideover: macro_slideover {
@@ -673,7 +673,7 @@
 &kp Q                &kp W       &kp E       &kp R                     &kp T            &kp Y        &kp U                              &kp I       &kp O    &kp P
 &ht_hl 2 A           &ht_hl 1 S  &ht_hl 3 D  &hm LEFT_GUI F            &kp G            &kp H        &ht_hyper LS(LA(LC(RIGHT_GUI))) J  &ht_hl 3 K  &kp L    &ht_hl 2 APOS
 &z_sft LEFT_SHIFT Z  &kp X       &kp C       &kp V                     &ht_hl 4 B       &kp N        &kp M                              &td_semic   &kp DOT  &kp RIGHT_SHIFT
-                                 &td_esc     &ht_skkp LGUI LEFT_SHIFT  &mt LCTRL ENTER  &lt 1 SPACE  &td_skmocp                         &kp GLOBE
+                                 &td_tab     &ht_skkp LGUI LEFT_SHIFT  &mt LCTRL ENTER  &lt 1 SPACE  &td_skmocp                         &kp GLOBE
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
