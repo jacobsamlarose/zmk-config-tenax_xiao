@@ -226,14 +226,14 @@
 
         cmb_ltphold {
             bindings = <&left_taphold RS(RG(LEFT_ARROW)) RG(LEFT)>;
-            key-positions = <26 27>;
+            key-positions = <16 17>;
             layers = <0>;
             timeout-ms = <150>;
         };
 
         cmb_rtphold {
             bindings = <&rght_taphold RS(RG(RIGHT)) RG(RIGHT)>;
-            key-positions = <27 28>;
+            key-positions = <17 18>;
             layers = <0>;
             timeout-ms = <150>;
         };
@@ -272,20 +272,6 @@
         cmb_meh_lh {
             bindings = <&sk LS(LA(LCTRL))>;
             key-positions = <2 12 11>;
-        };
-
-        cmb_arrword_left {
-            bindings = <&kp RS(RA(LEFT_ARROW))>;
-            key-positions = <16 17>;
-            timeout-ms = <150>;
-            layers = <1 0>;
-        };
-
-        cmb_arrword_right {
-            bindings = <&kp RS(RA(RIGHT_ARROW))>;
-            key-positions = <17 18>;
-            timeout-ms = <150>;
-            layers = <1 0>;
         };
     };
 
@@ -638,10 +624,10 @@
         default {
             display-name = "0DFL";
             bindings = <
-&kp Q                &kp W       &kp E             &kp R                     &kp T            &kp Y        &kp U                              &kp I       &kp O    &kp P
-&ht_hl 2 A           &ht_hl 1 S  &ht_hl 3 D        &hm LEFT_GUI F            &kp G            &kp H        &ht_hyper LS(LA(LC(RIGHT_GUI))) J  &ht_hl 3 K  &kp L    &ht_hl 2 APOS
-&z_sft LEFT_SHIFT Z  &kp X       &kp C             &kp V                     &ht_hl 4 B       &kp N        &kp M                              &td_semic   &kp DOT  &mt RIGHT_SHIFT TAB
-                                 &mt LEFT_ALT TAB  &ht_skkp LGUI LEFT_SHIFT  &mt LCTRL ENTER  &lt 1 SPACE  &td_skmocp                         &kp GLOBE
+&kp Q                &kp W       &kp E             &kp R                     &kp T            &kp Y        &kp U                         &kp I       &kp O    &kp P
+&ht_hl 2 A           &ht_hl 1 S  &ht_hl 3 D        &hm LEFT_GUI F            &kp G            &kp H        &hm RIGHT_GUI J               &ht_hl 3 K  &kp L    &ht_hl 2 APOS
+&z_sft LEFT_SHIFT Z  &kp X       &kp C             &kp V                     &ht_hl 4 B       &kp N        &ht_hyper RS(RA(RC(RCMD))) M  &td_semic   &kp DOT  &mt RIGHT_SHIFT TAB
+                                 &mt LEFT_ALT TAB  &ht_skkp LGUI LEFT_SHIFT  &mt LCTRL ENTER  &lt 1 SPACE  &td_skmocp                    &kp GLOBE
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -652,10 +638,10 @@
             label = "1NMNV";
             display-name = "1NMNV";
             bindings = <
-&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD  &none             &macro_displaylocn                  &swapper  &macro_windows                        &kp ESC
-&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 3 NUMBER_6  &kp COLON   &macro_slideover  &ArrowSelect LS(LA(LEFT)) RA(LEFT)  &kp UP    &ArrowSelect RA(RS(RIGHT)) RA(RIGHT)  &kp SLASH
-&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0      &macro_switch     &left_taphold LA(LEFT) LEFT         &kp DOWN  &rght_taphold RA(RIGHT) RIGHT         &ht_shift RIGHT_SHIFT EQUAL
-                                                        &trans        &trans             &trans      &mo 3             &trans                              &trans
+&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD  &macro_displaylocn  &none                               &kp UP    &none                                 &kp ESC
+&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 3 NUMBER_6  &kp COLON   &macro_slideover    &ArrowSelect LS(LA(LEFT)) RA(LEFT)  &kp UP    &ArrowSelect RA(RS(RIGHT)) RA(RIGHT)  &kp SLASH
+&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0      &macro_switch       &left_taphold LA(LEFT) LEFT         &kp DOWN  &rght_taphold RA(RIGHT) RIGHT         &ht_shift RIGHT_SHIFT EQUAL
+                                                        &trans        &trans             &trans      &mo 3               &trans                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -678,7 +664,7 @@
             label = "3SHORT";
             display-name = "3SHRT";
             bindings = <
-&none      &none        &none         &none      &none      &macro_displaylocn  &none                             &none             &none                           &none
+&none      &none        &none         &none      &none      &macro_displaylocn  &none                             &none             &macro_windows                  &none
 &none      &kp LS(TAB)  &FN_up        &kp TAB    &none      &none               &left_taphold LG(L) LG(NUMBER_1)  &kp LG(LA(UP))    &left_taphold LG(LA(L)) LG(N0)  &kp LA(LG(EQUAL))
 &kp LSHFT  &FN_left     &FN_down      &FN_right  &none      &none               &kp LG(LEFT_BRACKET)              &kp RG(RA(DOWN))  &kp RG(RBKT)                    &kp RIGHT_SHIFT
                         &kp LEFT_ALT  &swapper   &kp LCTRL  &kp C_EJECT         &trans                            &trans
