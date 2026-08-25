@@ -131,13 +131,6 @@
             layers = <0>;
         };
 
-        cmb_meh_rh {
-            bindings = <&sk RA(RS(RCTRL))>;
-            key-positions = <17 7 18>;
-            layers = <0>;
-            timeout-ms = <150>;
-        };
-
         cmb_undo {
             bindings = <&kp LG(Z)>;
             key-positions = <11 12 13>;
@@ -271,7 +264,7 @@
 
         cmb_meh_lh {
             bindings = <&sk LS(LA(LCTRL))>;
-            key-positions = <2 12 11>;
+            key-positions = <11 1>;
         };
     };
 
@@ -638,10 +631,10 @@
             label = "1NMNV";
             display-name = "1NMNV";
             bindings = <
-&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD  &macro_displaylocn  &ArrowSelect LS(LA(LEFT)) RA(LEFT)  &kp UP    &ArrowSelect RA(RS(RIGHT)) RA(RIGHT)  &kp ESC
-&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 3 NUMBER_6  &kp COLON   &macro_slideover    &kp RS(TAB)                         &kp UP    &kp TAB                               &kp SLASH
-&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0      &macro_switch       &left_taphold LA(LEFT) LEFT         &kp DOWN  &rght_taphold RA(RIGHT) RIGHT         &ht_shift RIGHT_SHIFT EQUAL
-                                                        &trans        &trans             &trans      &mo 3               &trans                              &trans
+&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD  &macro_displaylocn  &none                        &none     &none                          &kp ESC
+&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &hm LCMD NUMBER_6  &kp COLON   &macro_slideover    &kp RS(TAB)                  &kp UP    &kp TAB                        &kp SLASH
+&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0      &macro_switch       &left_taphold LA(LEFT) LEFT  &kp DOWN  &rght_taphold RA(RIGHT) RIGHT  &ht_shift RIGHT_SHIFT EQUAL
+                                                        &trans        &kp LCMD           &trans      &trans              &trans                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
