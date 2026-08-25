@@ -227,14 +227,14 @@
         cmb_ltphold {
             bindings = <&left_taphold RS(RG(LEFT_ARROW)) RG(LEFT)>;
             key-positions = <16 17>;
-            layers = <0>;
+            layers = <0 1>;
             timeout-ms = <150>;
         };
 
         cmb_rtphold {
             bindings = <&rght_taphold RS(RG(RIGHT)) RG(RIGHT)>;
             key-positions = <17 18>;
-            layers = <0>;
+            layers = <0 1>;
             timeout-ms = <150>;
         };
 
