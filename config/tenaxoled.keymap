@@ -703,9 +703,9 @@
         MOUSING {
             bindings = <
 &trans  &trans          &msc SCRL_UP    &trans    &trans           &trans    &trans          &trans          &trans           &trans
-&trans  &msc SCRL_LEFT  &mkp MB2        &mkp MB1  &msc SCRL_RIGHT  &trans    &mkp MB1        &mmv MOVE_UP    &to 0            &trans
+&trans  &msc SCRL_LEFT  &mkp MB2        &mkp MB1  &msc SCRL_RIGHT  &trans    &mkp MB2        &mmv MOVE_UP    &to 0            &trans
 &trans  &trans          &msc SCRL_DOWN  &trans    &trans           &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-                        &trans          &trans    &trans           &mkp MB2  &mkp MB3        &trans
+                        &trans          &trans    &trans           &mkp MB1  &mkp MB3        &trans
             >;
 
             label = "5_MKEYS";
