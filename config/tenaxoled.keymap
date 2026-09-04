@@ -276,7 +276,8 @@
 
         cmb_l5 {
             bindings = <&to 5>;
-            key-positions = <16 18>;
+            key-positions = <26 27>;
+            layers = <0>;
         };
     };
 
@@ -698,10 +699,10 @@
 
         MOUSING {
             bindings = <
-&trans  &trans          &msc SCRL_UP    &trans    &trans           &trans    &trans          &to 0           &trans           &trans
-&trans  &msc SCRL_LEFT  &mkp MB2        &mkp MB1  &msc SCRL_RIGHT  &trans    &mkp MB1        &mmv MOVE_UP    &trans           &trans
+&trans  &trans          &msc SCRL_UP    &trans    &trans           &trans    &trans          &trans          &trans           &trans
+&trans  &msc SCRL_LEFT  &mkp MB2        &mkp MB1  &msc SCRL_RIGHT  &trans    &mkp MB1        &mmv MOVE_UP    &to 0            &trans
 &trans  &trans          &msc SCRL_DOWN  &trans    &trans           &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-                        &trans          &to 0     &trans           &mkp MB2  &mkp MB3        &mkp MB3
+                        &trans          &trans    &trans           &mkp MB2  &mkp MB3        &trans
             >;
 
             label = "5_MKEYS";
