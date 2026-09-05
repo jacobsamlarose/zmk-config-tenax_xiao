@@ -289,19 +289,19 @@
         cmb_xmouse {
             bindings = <&to 0>;
             key-positions = <26 27 28>;
-            layers = <5>;
+            layers = <5 6>;
         };
 
         cmb_mscup {
             bindings = <&msc SCRL_UP>;
             key-positions = <7 17>;
-            layers = <5>;
+            layers = <5 6>;
         };
 
         cmb_mscdn {
             bindings = <&msc SCRL_DOWN>;
             key-positions = <17 27>;
-            layers = <5>;
+            layers = <5 6>;
         };
     };
 
@@ -725,7 +725,7 @@
             bindings = <
 &trans  &trans    &trans    &trans    &trans  &trans    &trans          &trans          &trans           &trans
 &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans  &trans    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans
-&trans  &trans    &trans    &trans    &trans  &mkp MB3  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 6
+&trans  &trans    &trans    &trans    &trans  &mkp MB3  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &tog 6
                   &trans    &trans    &trans  &mkp MB1  &mkp MB2        &trans
             >;
 
