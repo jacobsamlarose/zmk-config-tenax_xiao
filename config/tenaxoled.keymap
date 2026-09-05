@@ -27,12 +27,12 @@
 &mmv_input_listener {
     precision {
         layers = <6>;
-        input-processors = <&zip_xy_scaler 1 3>;
+        input-processors = <&zip_xy_scaler 1 4>;
     };
 };
 
 &mmv {
-    time-to-max-speed-ms = <200>;
+    time-to-max-speed-ms = <150>;
     acceleration-exponent = <2>;
 };
 
