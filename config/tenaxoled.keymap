@@ -284,7 +284,7 @@
         cmb_xmouse {
             bindings = <&to 0>;
             key-positions = <26 27 28>;
-            layers = <0>;
+            layers = <5>;
         };
 
         cmb_mscup {
