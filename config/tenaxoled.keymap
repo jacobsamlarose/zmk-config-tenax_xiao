@@ -213,11 +213,6 @@
             layers = <1>;
         };
 
-        cmb_shiftlock {
-            bindings = <&td_shlock_movlock>;
-            key-positions = <17 27>;
-        };
-
         cmb_arrwordleft {
             bindings = <&ArrowSelect RS(RA(LEFT)) RA(LEFT)>;
             key-positions = <16 26>;
@@ -280,12 +275,6 @@
             key-positions = <11 1>;
         };
 
-        cmb_mb3 {
-            bindings = <&mkp MB3>;
-            key-positions = <12 13>;
-            layers = <5>;
-        };
-
         cmb_l5 {
             bindings = <&to 5>;
             key-positions = <26 27 28>;
@@ -296,6 +285,18 @@
             bindings = <&to 0>;
             key-positions = <26 27 28>;
             layers = <0>;
+        };
+
+        cmb_mscup {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <7 17>;
+            layers = <5>;
+        };
+
+        cmb_mscdn {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <17 27>;
+            layers = <5>;
         };
     };
 
@@ -717,10 +718,10 @@
 
         MOUSING {
             bindings = <
-&trans  &trans          &msc SCRL_UP    &trans    &trans           &trans    &msc SCRL_UP    &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans
-&trans  &msc SCRL_LEFT  &mkp MB2        &mkp MB1  &msc SCRL_RIGHT  &trans    &msc SCRL_DOWN  &mmv MOVE_UP    &to 0            &trans
-&trans  &trans          &msc SCRL_DOWN  &trans    &trans           &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 6
-                        &trans          &trans    &trans           &mkp MB1  &mkp MB2        &trans
+&trans  &trans    &trans    &trans    &trans  &trans    &trans          &trans          &trans           &trans
+&trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans  &trans    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans
+&trans  &trans    &trans    &trans    &trans  &mkp MB3  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 6
+                  &trans    &trans    &trans  &mkp MB1  &mkp MB2        &trans
             >;
 
             label = "5_MKEYS";
