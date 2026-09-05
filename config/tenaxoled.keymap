@@ -31,6 +31,11 @@
     };
 };
 
+&mmv {
+    time-to-max-speed-ms = <250>;
+    acceleration-exponent = <2>;
+};
+
 // #define MO_TOG(layer) &mo_tog layer layer   // Macro to apply momentary-layer-on-hold/toggle-layer-on-tap to a specific layer
 // &led_strip {
 //    chain-length = <18>;
