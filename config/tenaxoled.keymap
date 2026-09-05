@@ -209,8 +209,8 @@
 
         cmb_bspLine {
             bindings = <&kp RG(BACKSPACE)>;
-            key-positions = <16 17 7>;
-            layers = <0>;
+            key-positions = <16 6>;
+            layers = <1>;
         };
 
         cmb_shiftlock {
@@ -259,8 +259,8 @@
 
         drafts_del_line {
             bindings = <&kp LC(LESS_THAN)>;
-            key-positions = <16 17 6 7>;
-            layers = <0>;
+            key-positions = <17 7>;
+            layers = <1>;
             timeout-ms = <200>;
         };
 
@@ -288,7 +288,13 @@
 
         cmb_l5 {
             bindings = <&to 5>;
-            key-positions = <26 27>;
+            key-positions = <26 27 28>;
+            layers = <0>;
+        };
+
+        cmb_xmouse {
+            bindings = <&to 0>;
+            key-positions = <26 27 28>;
             layers = <0>;
         };
     };
@@ -711,10 +717,10 @@
 
         MOUSING {
             bindings = <
-&trans  &trans          &msc SCRL_UP    &trans    &trans           &trans    &trans          &trans          &trans           &trans
-&trans  &msc SCRL_LEFT  &mkp MB2        &mkp MB1  &msc SCRL_RIGHT  &trans    &mkp MB2        &mmv MOVE_UP    &to 0            &trans
+&trans  &trans          &msc SCRL_UP    &trans    &trans           &trans    &msc SCRL_UP    &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans
+&trans  &msc SCRL_LEFT  &mkp MB2        &mkp MB1  &msc SCRL_RIGHT  &trans    &msc SCRL_DOWN  &mmv MOVE_UP    &to 0            &trans
 &trans  &trans          &msc SCRL_DOWN  &trans    &trans           &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 6
-                        &trans          &trans    &trans           &mkp MB1  &mkp MB3        &trans
+                        &trans          &trans    &trans           &mkp MB1  &mkp MB2        &trans
             >;
 
             label = "5_MKEYS";
