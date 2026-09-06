@@ -272,12 +272,12 @@
 
         cmb_hyper {
             bindings = <&sk LS(LA(LC(LCMD)))>;
-            key-positions = <12 2>;
+            key-positions = <1 11>;
         };
 
         cmb_meh_lh {
             bindings = <&sk LS(LA(LCTRL))>;
-            key-positions = <11 1>;
+            key-positions = <1 11 12>;
         };
 
         cmb_l5 {
@@ -302,6 +302,18 @@
             bindings = <&msc SCRL_DOWN>;
             key-positions = <17 27>;
             layers = <5 6>;
+        };
+
+        cmb_hyper_r {
+            bindings = <&sk LS(LA(LC(LCMD)))>;
+            key-positions = <8 18>;
+            layers = <0>;
+        };
+
+        cmb_meh_rh {
+            bindings = <&sk LS(LA(LCTRL))>;
+            key-positions = <8 18 17>;
+            layers = <0>;
         };
     };
 
@@ -659,10 +671,10 @@
         default {
             display-name = "0DFL";
             bindings = <
-&kp Q                &kp W       &kp E             &kp R                     &kp T            &kp Y        &kp U                         &kp I       &kp O    &kp P
-&ht_hl 2 A           &ht_hl 1 S  &ht_hl 3 D        &hm LEFT_GUI F            &kp G            &kp H        &hm RIGHT_GUI J               &ht_hl 3 K  &kp L    &ht_hl 2 APOS
-&z_sft LEFT_SHIFT Z  &kp X       &kp C             &kp V                     &ht_hl 4 B       &kp N        &ht_hyper RS(RA(RC(RCMD))) M  &td_semic   &kp DOT  &kp RIGHT_SHIFT
-                                 &mt LEFT_ALT TAB  &ht_skkp LGUI LEFT_SHIFT  &mt LCTRL ENTER  &lt 1 SPACE  &td_skmocp                    &kp GLOBE
+&kp Q                &kp W       &kp E             &kp R                     &kp T                         &kp Y                         &kp U            &kp I       &kp O    &kp P
+&ht_hl 2 A           &ht_hl 1 S  &ht_hl 3 D        &hm LEFT_GUI F            &ht_hyper LC(LA(LS(LCMD))) G  &ht_hyper RC(RA(RS(RCMD))) H  &hm RIGHT_GUI J  &ht_hl 3 K  &kp L    &ht_hl 2 APOS
+&z_sft LEFT_SHIFT Z  &kp X       &kp C             &kp V                     &ht_hl 4 B                    &kp N                         &kp M            &td_semic   &kp DOT  &kp RIGHT_SHIFT
+                                 &mt LEFT_ALT TAB  &ht_skkp LGUI LEFT_SHIFT  &mt LCTRL ENTER               &lt 1 SPACE                   &td_skmocp       &kp GLOBE
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
