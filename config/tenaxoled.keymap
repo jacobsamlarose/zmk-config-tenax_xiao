@@ -220,14 +220,16 @@
 
         cmb_arrwordleft {
             bindings = <&ArrowSelect RS(RA(LEFT)) RA(LEFT)>;
-            key-positions = <16 26>;
+            key-positions = <16 27>;
             require-prior-idle-ms = <225>;
+            layers = <0 1>;
         };
 
         cmb_arrwordright {
             bindings = <&ArrowSelect RA(RS(RIGHT)) RA(RIGHT)>;
-            key-positions = <18 28>;
+            key-positions = <18 27>;
             require-prior-idle-ms = <225>;
+            layers = <0 1>;
         };
 
         cmb_ltphold {
