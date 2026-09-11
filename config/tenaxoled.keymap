@@ -32,8 +32,8 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <150>;
-    acceleration-exponent = <2>;
+    time-to-max-speed-ms = <0>;
+    acceleration-exponent = <0>;
 };
 
 // #define MO_TOG(layer) &mo_tog layer layer   // Macro to apply momentary-layer-on-hold/toggle-layer-on-tap to a specific layer
