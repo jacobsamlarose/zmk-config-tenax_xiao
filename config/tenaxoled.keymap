@@ -329,6 +329,13 @@
             key-positions = <11 22>;
             layers = <0>;
         };
+
+        cmb_shift {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <20 11>;
+            layers = <0>;
+            timeout-ms = <200>;
+        };
     };
 
     behaviors {
