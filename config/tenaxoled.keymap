@@ -321,11 +321,13 @@
         cmb_tab {
             bindings = <&kp TAB>;
             key-positions = <22 13>;
+            layers = <0>;
         };
 
         cmb_shifttab {
             bindings = <&kp LS(TAB)>;
             key-positions = <11 22>;
+            layers = <0>;
         };
     };
 
