@@ -320,13 +320,13 @@
 
         cmb_tab {
             bindings = <&kp TAB>;
-            key-positions = <22 13>;
+            key-positions = <12 3>;
             layers = <0>;
         };
 
         cmb_shifttab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <11 22>;
+            key-positions = <12 1>;
             layers = <0>;
         };
 
@@ -335,6 +335,11 @@
             key-positions = <20 11>;
             layers = <0>;
             timeout-ms = <200>;
+        };
+
+        cmb_spotlight {
+            bindings = <&mcr_spotlight>;
+            key-positions = <2 12>;
         };
     };
 
@@ -500,6 +505,20 @@
                 <&kp RIGHT>,
                 <&macro_release>,
                 <&kp GLOBE &kp LCTRL>;
+        };
+
+        mcr_spotlight: mcr_spotlight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCMD>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LCMD>;
+
+            label = "MCR_SPOTLIGHT";
         };
 
         hm: homerow_mods {
