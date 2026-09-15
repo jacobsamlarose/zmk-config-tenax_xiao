@@ -214,7 +214,7 @@
 
         cmb_bspLine {
             bindings = <&kp RG(BACKSPACE)>;
-            key-positions = <16 6>;
+            key-positions = <7 17>;
             layers = <1>;
         };
 
@@ -261,7 +261,7 @@
 
         drafts_del_line {
             bindings = <&kp LC(LESS_THAN)>;
-            key-positions = <17 7>;
+            key-positions = <6 16>;
             layers = <1>;
             timeout-ms = <200>;
         };
