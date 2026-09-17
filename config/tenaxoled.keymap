@@ -54,7 +54,7 @@
     quick-release;
 };
 
-&caps_word { continue-list = <UNDERSCORE MINUS BACKSPACE>; };
+&caps_word { continue-list = <UNDERSCORE MINUS BACKSPACE LGUI>; };
 
 / {
     combos {
