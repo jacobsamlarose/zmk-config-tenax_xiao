@@ -54,7 +54,7 @@
     quick-release;
 };
 
-&caps_word { continue-list = <UNDERSCORE MINUS BACKSPACE LGUI>; };
+&caps_word { continue-list = <UNDERSCORE MINUS BACKSPACE LGUI RIGHT_SHIFT LEFT_SHIFT>; };
 
 / {
     combos {
@@ -319,6 +319,13 @@
         cmb_spotlight {
             bindings = <&mcr_spotlight>;
             key-positions = <0 10>;
+        };
+
+        cmb_cmd {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <32 31>;
+            timeout-ms = <150>;
+            layers = <0>;
         };
     };
 
@@ -730,10 +737,10 @@
             label = "3SHORT";
             display-name = "3SHRT";
             bindings = <
-&none      &kp LS(TAB)  &none         &kp TAB     &none      &macro_displaylocn  &macro_slideover                  &macro_switch     &macro_windows                  &none
-&none      &win_left    &FN_up        &win_right  &none      &none               &left_taphold LG(L) LG(NUMBER_1)  &kp LG(LA(UP))    &left_taphold LG(LA(L)) LG(N0)  &kp LA(LG(EQUAL))
-&kp LSHFT  &FN_left     &FN_down      &FN_right   &none      &none               &kp LG(LEFT_BRACKET)              &kp RG(RA(DOWN))  &kp RG(RBKT)                    &kp RIGHT_SHIFT
-                        &kp LEFT_ALT  &swapper    &kp LCTRL  &kp C_EJECT         &trans                            &trans
+&none           &kp LS(TAB)  &none         &kp TAB     &none      &macro_displaylocn  &macro_slideover                  &macro_switch     &macro_windows                  &none
+&kp LG(RETURN)  &win_left    &FN_up        &win_right  &none      &none               &left_taphold LG(L) LG(NUMBER_1)  &kp LG(LA(UP))    &left_taphold LG(LA(L)) LG(N0)  &kp LA(LG(EQUAL))
+&kp LSHFT       &FN_left     &FN_down      &FN_right   &none      &none               &kp LG(LEFT_BRACKET)              &kp RG(RA(DOWN))  &kp RG(RBKT)                    &kp RIGHT_SHIFT
+                             &kp LEFT_ALT  &swapper    &kp LCTRL  &kp C_EJECT         &trans                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
