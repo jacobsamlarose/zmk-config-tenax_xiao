@@ -322,7 +322,7 @@
         };
 
         cmb_cmd {
-            bindings = <&kp LEFT_GUI>;
+            bindings = <&sk LEFT_GUI>;
             key-positions = <32 31>;
             timeout-ms = <150>;
             layers = <0>;
