@@ -260,12 +260,12 @@
 
         cmb_hyper {
             bindings = <&sk LS(LA(LC(LCMD)))>;
-            key-positions = <12 13>;
+            key-positions = <1 11>;
         };
 
         cmb_meh_lh {
             bindings = <&sk LS(LA(LCTRL))>;
-            key-positions = <11 12>;
+            key-positions = <10 0>;
         };
 
         cmb_l5 {
@@ -294,13 +294,13 @@
 
         cmb_hyper_r {
             bindings = <&sk LS(LA(LC(LCMD)))>;
-            key-positions = <17 16>;
+            key-positions = <18 8>;
             layers = <0>;
         };
 
         cmb_meh_rh {
             bindings = <&sk LS(LA(LCTRL))>;
-            key-positions = <18 17>;
+            key-positions = <19 9>;
             layers = <0>;
         };
 
@@ -318,7 +318,7 @@
 
         cmb_spotlight {
             bindings = <&mcr_spotlight>;
-            key-positions = <1 11>;
+            key-positions = <12 13>;
         };
 
         cmb_cmd {
