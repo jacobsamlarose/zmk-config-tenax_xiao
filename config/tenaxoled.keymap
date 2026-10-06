@@ -24,12 +24,12 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&mmv_input_listener {
-    precision {
-        layers = <6>;
-        input-processors = <&zip_xy_scaler 1 4>;
-    };
-};
+// &mmv_input_listener {
+//    precision {
+//        layers = <6>;
+//        input-processors = <&zip_xy_scaler 1 4>;
+//    };
+// };
 
 &mmv {
     time-to-max-speed-ms = <0>;
@@ -778,23 +778,15 @@
         };
 
         MOUSING {
-            bindings = <
-&trans  &trans    &trans    &trans    &trans  &trans    &trans          &trans          &trans           &trans
-&trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans  &trans    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans
-&trans  &trans    &trans    &trans    &trans  &mkp MB3  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &tog 6
-                  &trans    &trans    &trans  &mkp MB1  &mkp MB2        &trans
-            >;
-
             label = "5_MKEYS";
-        };
-
-        SNIPER {
+            display-name = "5MOUS";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans      &trans    &msc SCRL_LEFT      &mmv MOVE_Y(-500)   &msc SCRL_RIGHT     &trans
+&kp LSHFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans      &trans    &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &kp RSHFT
+&trans     &trans          &trans          &trans           &trans      &mkp MB3  &trans              &mkp MB1            &trans              &trans
+                        &trans          &mkp MB2         &mkp MB1    &mkp MB1  &mkp MB2            &trans
             >;
+
         };
     };
 };
