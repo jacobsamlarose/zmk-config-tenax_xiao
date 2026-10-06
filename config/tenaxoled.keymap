@@ -276,19 +276,7 @@
 
         cmb_xmouse {
             bindings = <&to 0>;
-            key-positions = <26 27 28>;
-            layers = <5 6>;
-        };
-
-        cmb_mscup {
-            bindings = <&msc SCRL_UP>;
-            key-positions = <7 17>;
-            layers = <5 6>;
-        };
-
-        cmb_mscdn {
-            bindings = <&msc SCRL_DOWN>;
-            key-positions = <17 27>;
+            key-positions = <7 16 17 18>;
             layers = <5 6>;
         };
 
@@ -343,6 +331,12 @@
             bindings = <&bt BT_SEL 2>;
             key-positions = <11 12 22>;
             layers = <0>;
+        };
+
+        cmb_xmouselh {
+            bindings = <&to 0>;
+            key-positions = <2 11 12 13>;
+            layers = <5 6>;
         };
     };
 
@@ -781,12 +775,11 @@
             label = "5_MKEYS";
             display-name = "5MOUS";
             bindings = <
-&trans     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans      &trans    &msc SCRL_LEFT      &mmv MOVE_Y(-500)   &msc SCRL_RIGHT     &trans
-&kp LSHFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans      &trans    &mmv MOVE_X(-500)   &mmv MOVE_Y(500)    &mmv MOVE_X(500)    &kp RSHFT
-&trans     &trans          &trans          &trans           &trans      &mkp MB3  &trans              &mkp MB1            &trans              &trans
-                        &trans          &mkp MB2         &mkp MB1    &mkp MB1  &mkp MB2            &trans
+&trans     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_UP    &msc SCRL_LEFT     &mmv MOVE_Y(-500)  &msc SCRL_RIGHT   &trans
+&kp LSHFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &msc SCRL_DOWN  &mmv MOVE_X(-500)  &mmv MOVE_Y(500)   &mmv MOVE_X(500)  &kp RSHFT
+&trans     &trans          &trans          &trans           &trans          &trans          &trans             &trans             &trans            &trans
+                           &trans          &mkp MB2         &mkp MB1        &mkp MB1        &mkp MB2           &trans
             >;
-
         };
     };
 };
