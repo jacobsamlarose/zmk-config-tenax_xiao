@@ -336,7 +336,7 @@
         cmb_xmouselh {
             bindings = <&to 0>;
             key-positions = <2 11 12 13>;
-            layers = <5 6>;
+            layers = <5>;
         };
     };
 
