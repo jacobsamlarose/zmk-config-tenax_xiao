@@ -51,7 +51,7 @@
 
 &sk {
     release-after-ms = <3000>;
-    quick-release;
+    // quick-release;
 };
 
 &caps_word { continue-list = <UNDERSCORE MINUS BACKSPACE>; };
