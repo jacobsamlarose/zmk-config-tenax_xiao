@@ -270,14 +270,20 @@
 
         cmb_l5 {
             bindings = <&to 5>;
-            key-positions = <26 27 28>;
+            key-positions = <7 16 17 18>;
+            layers = <0>;
+        };
+
+        cmb_l5lh {
+            bindings = <&to 5>;
+            key-positions = <2 11 12 13>;
             layers = <0>;
         };
 
         cmb_xmouse {
             bindings = <&to 0>;
             key-positions = <7 16 17 18>;
-            layers = <5 6>;
+            layers = <5>;
         };
 
         cmb_hyper_r {
