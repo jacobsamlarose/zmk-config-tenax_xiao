@@ -262,11 +262,13 @@
         cmb_hyper {
             bindings = <&sk LS(LA(LC(LCMD)))>;
             key-positions = <1 11>;
+            layers = <0>;
         };
 
         cmb_meh_lh {
             bindings = <&sk LS(LA(LCTRL))>;
             key-positions = <10 0>;
+            layers = <0>;
         };
 
         cmb_l5 {
@@ -314,6 +316,7 @@
         cmb_spotlight {
             bindings = <&mcr_spotlight>;
             key-positions = <12 13>;
+            layers = <0>;
         };
 
         cmb_cmd {
@@ -326,6 +329,7 @@
         cmb_bt0 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <1 2 12>;
+            layers = <0>;
         };
 
         cmb_bt1 {
