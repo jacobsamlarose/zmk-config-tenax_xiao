@@ -256,6 +256,7 @@
             bindings = <&bsp_word>;
             key-positions = <16 6>;
             timeout-ms = <200>;
+            layers = <0 1>;
         };
 
         cmb_hyper {
@@ -280,11 +281,11 @@
             layers = <0>;
         };
 
-        // cmb_xmouse {
-        //    bindings = <&to 0>;
-        //    key-positions = <7 16 17 18>;
-        //    layers = <5>;
-        // };
+        cmb_xmouse {
+            bindings = <&to 0>;
+            key-positions = <7 16 17 18>;
+            layers = <5>;
+        };
 
         cmb_hyper_r {
             bindings = <&sk LS(LA(LC(LCMD)))>;
