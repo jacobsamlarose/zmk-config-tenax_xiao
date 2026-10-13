@@ -301,10 +301,11 @@
             layers = <0>;
         };
 
-        cmb_tab {
-            bindings = <&kp TAB>;
+        cmb_midfshift {
+            bindings = <&sk LEFT_SHIFT>;
             key-positions = <12 2>;
             layers = <0>;
+            timeout-ms = <150>;
         };
 
         cmb_shifttab {
@@ -323,6 +324,7 @@
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <32 31>;
             layers = <0>;
+            timeout-ms = <150>;
         };
 
         cmb_bt0 {
