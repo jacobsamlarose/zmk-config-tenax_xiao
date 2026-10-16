@@ -269,6 +269,7 @@
             bindings = <&sk LS(LA(LCTRL))>;
             key-positions = <10 0>;
             layers = <0>;
+            timeout-ms = <130>;
         };
 
         cmb_l5 {
@@ -293,12 +294,14 @@
             bindings = <&sk LS(LA(LC(LCMD)))>;
             key-positions = <18 8>;
             layers = <0>;
+            timeout-ms = <130>;
         };
 
         cmb_meh_rh {
             bindings = <&sk LS(LA(LCTRL))>;
             key-positions = <19 9>;
             layers = <0>;
+            timeout-ms = <130>;
         };
 
         cmb_tab {
@@ -324,6 +327,7 @@
             bindings = <&to 0>;
             key-positions = <2 11 12 13>;
             layers = <5>;
+            timeout-ms = <150>;
         };
 
         cmb_eject {
