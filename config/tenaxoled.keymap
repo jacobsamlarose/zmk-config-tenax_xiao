@@ -305,7 +305,7 @@
             bindings = <&kp TAB>;
             key-positions = <12 2>;
             layers = <0>;
-            timeout-ms = <150>;
+            timeout-ms = <120>;
         };
 
         cmb_shifttab {
