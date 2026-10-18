@@ -849,10 +849,10 @@
             label = "5_MKEYS";
             display-name = "5MOUS";
             bindings = <
-&trans     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_LEFT     &mmv MOVE_Y(-500)  &msc SCRL_RIGHT   &trans
+&to 0      &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_LEFT     &mmv MOVE_Y(-500)  &msc SCRL_RIGHT   &to 0
 &kp LSHFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &msc SCRL_UP    &mmv MOVE_X(-500)  &mmv MOVE_Y(500)   &mmv MOVE_X(500)  &kp RSHFT
-&trans     &trans          &trans          &trans           &trans          &trans          &trans             &trans             &trans            &trans
-                           &trans          &mkp MB2         &mkp MB1        &mkp MB1        &mkp MB2           &trans
+&to 0      &to 0          &to 0          &to 0            &to 0           &to 0           &to 0             &to 0             &to 0            &to 0
+                          &to 0          &mkp MB2         &mkp MB1        &mkp MB1        &mkp MB2           &to 0
             >;
         };
 
