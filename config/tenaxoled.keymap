@@ -755,6 +755,26 @@
                 <&bt BT_SEL 3>,
                 <&to 5>;
         };
+
+        ipad_mouse: ipad_mouse {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings =
+                <&bt BT_SEL 0>,
+                <&to 5>;
+        };
+
+        imac_typing: imac_typing {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings =
+                <&bt BT_SEL 3>,
+                <&to 0>;
+        };
     };
 
     keymap {
@@ -841,15 +861,16 @@
             display-name = "6DEV";
 
             // Right-hand positions:
-            // Y: mouse     U: main iPad   I: M1       O: Mini   P: cancel
-            // H: typing    J: iMac        K: spare    L: none   ': none
-            // N: iPad/type M: iMac/mouse  ,: none     .: none   shift: none
+            // Y: unused     U: main iPad   I: M1      O: Mini       P: unused
+            // H: iPad/mouse J: iMac        K: spare   L: iMac/type  ': mouse
+            // N: iPad/type  M: iMac/mouse  ,: unused  .: unused     shift: close
+            // Right thumbs: typing       mouse      unused
 
             bindings = <
-&none  &none  &none  &none  &none    &to 5         &select_device 0  &select_device 1  &select_device 2  &tog 6
-&none  &none  &none  &none  &none    &to 0         &select_device 3  &select_device 4  &none             &none
-&none  &none  &none  &none  &none    &ipad_typing  &imac_mouse       &none             &none             &none
-              &none  &none  &none    &none         &none             &none
+&none  &none  &none  &none  &none    &none         &select_device 0  &select_device 1  &select_device 2  &none
+&none  &none  &none  &none  &none    &ipad_mouse   &select_device 3  &select_device 4  &imac_typing      &to 5
+&none  &none  &none  &none  &none    &ipad_typing  &imac_mouse       &none             &none             &tog 6
+              &none  &none  &none    &to 0         &to 5             &none
             >;
         };
     };
