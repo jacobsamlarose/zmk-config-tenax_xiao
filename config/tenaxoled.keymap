@@ -349,6 +349,13 @@
             timeout-ms = <150>;
             layers = <0>;
         };
+
+        cmb_device_selector {
+            timeout-ms = <60>;
+            key-positions = <27 28>;
+            bindings = <&tog 6>;
+            layers = <0 5 6>;
+        };
     };
 
     behaviors {
@@ -711,6 +718,43 @@
     };
 
     macros {
+        // Select a Bluetooth profile, then close the selector.
+        // Leave the underlying typing/mouse mode unchanged.
+        select_device: select_device {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+
+            bindings =
+                <&macro_param_1to2>,
+                <&bt BT_SEL MACRO_PLACEHOLDER>,
+                <&tog 6>;
+        };
+
+        // Main iPad, with typing mode explicitly selected.
+        ipad_typing: ipad_typing {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+
+            bindings =
+                <&bt BT_SEL 0>,
+                <&to 0>;
+        };
+
+        // iMac, with mouse mode explicitly selected.
+        imac_mouse: imac_mouse {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+
+            bindings =
+                <&bt BT_SEL 3>,
+                <&to 5>;
+        };
     };
 
     keymap {
@@ -789,6 +833,23 @@
 &kp LSHFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &msc SCRL_UP    &mmv MOVE_X(-500)  &mmv MOVE_Y(500)   &mmv MOVE_X(500)  &kp RSHFT
 &trans     &trans          &trans          &trans           &trans          &trans          &trans             &trans             &trans            &trans
                            &trans          &mkp MB2         &mkp MB1        &mkp MB1        &mkp MB2           &trans
+            >;
+        };
+
+        DEVICE_SELECTOR {
+            label = "6DEVICE";
+            display-name = "6DEV";
+
+            // Right-hand positions:
+            // Y: mouse     U: main iPad   I: M1       O: Mini   P: cancel
+            // H: typing    J: iMac        K: spare    L: none   ': none
+            // N: iPad/type M: iMac/mouse  ,: none     .: none   shift: none
+
+            bindings = <
+&none  &none  &none  &none  &none    &to 5         &select_device 0  &select_device 1  &select_device 2  &tog 6
+&none  &none  &none  &none  &none    &to 0         &select_device 3  &select_device 4  &none             &none
+&none  &none  &none  &none  &none    &ipad_typing  &imac_mouse       &none             &none             &none
+              &none  &none  &none    &none         &none             &none
             >;
         };
     };
