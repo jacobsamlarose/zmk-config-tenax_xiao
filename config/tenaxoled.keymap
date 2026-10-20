@@ -812,10 +812,10 @@
             label = "3SHORT";
             display-name = "3SHRT";
             bindings = <
-&none           &bt BT_SEL 0  &bt BT_SEL 1  &swapper      &macro_windows  &macro_displaylocn     &bt BT_SEL 3                      &bt BT_SEL 4           &macro_windows                  &none
+&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &macro_windows  &macro_displaylocn     &bt BT_SEL 3                      &bt BT_SEL 4           &macro_windows                  &none
 &kp LG(RETURN)  &win_left     &FN_up        &win_right    &none           &macro_slideover       &left_taphold LG(L) LG(NUMBER_1)  &kp LG(LA(UP))         &left_taphold LG(LA(L)) LG(N0)  &kp LA(LG(EQUAL))
-&kp LSHFT       &FN_left      &FN_down      &FN_right     &none           &macro_switch          &kp LG(LEFT_BRACKET)              &kp RG(RA(DOWN))       &kp RG(RBKT)                    &kp RIGHT_SHIFT
-                              &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL       &kp RS(RA(RC(RG(L))))  &kp RG(RC(RA(RS(A))))             &kp LS(LA(LC(LG(H))))
+&kp LSHFT       &FN_left      &FN_down      &FN_right     &kp LCTRL       &macro_switch          &kp LG(LEFT_BRACKET)              &kp RG(RA(DOWN))       &kp RG(RBKT)                    &kp RIGHT_SHIFT
+                              &kp LEFT_ALT  &kp LEFT_GUI  &swapper        &kp RS(RA(RC(RG(L))))  &kp RG(RC(RA(RS(A))))             &kp LS(LA(LC(LG(H))))
             >;
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
