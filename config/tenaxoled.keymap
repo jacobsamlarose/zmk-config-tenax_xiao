@@ -309,6 +309,7 @@
             key-positions = <12 2>;
             layers = <0>;
             timeout-ms = <80>;
+            require-prior-idle-ms = <150>;
         };
 
         cmb_shifttab {
