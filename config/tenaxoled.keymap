@@ -720,40 +720,33 @@
     macros {
         // Select a Bluetooth profile, then close the selector.
         // Leave the underlying typing/mouse mode unchanged.
+
         select_device: select_device {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             wait-ms = <0>;
             tap-ms = <0>;
-
-            bindings =
-                <&macro_param_1to2>,
-                <&bt BT_SEL MACRO_PLACEHOLDER>,
-                <&tog 6>;
+            bindings = <&macro_param_1to2 &bt BT_SEL MACRO_PLACEHOLDER &tog 6>;
         };
 
         // Main iPad, with typing mode explicitly selected.
+
         ipad_typing: ipad_typing {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-
-            bindings =
-                <&bt BT_SEL 0>,
-                <&to 0>;
+            bindings = <&bt BT_SEL 0 &to 0>;
         };
 
         // iMac, with mouse mode explicitly selected.
+
         imac_mouse: imac_mouse {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-
-            bindings =
-                <&bt BT_SEL 3>,
-                <&to 5>;
+            bindings = <&bt BT_SEL 3 &to 5>;
         };
 
         ipad_mouse: ipad_mouse {
@@ -761,9 +754,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings =
-                <&bt BT_SEL 0>,
-                <&to 5>;
+            bindings = <&bt BT_SEL 0 &to 5>;
         };
 
         imac_typing: imac_typing {
@@ -771,9 +762,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings =
-                <&bt BT_SEL 3>,
-                <&to 0>;
+            bindings = <&bt BT_SEL 3 &to 0>;
         };
     };
 
@@ -823,10 +812,10 @@
             label = "3SHORT";
             display-name = "3SHRT";
             bindings = <
-&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &macro_windows  &macro_displaylocn     &bt BT_SEL 3                      &bt BT_SEL 4           &macro_windows                  &none
+&none           &bt BT_SEL 0  &bt BT_SEL 1  &swapper      &macro_windows  &macro_displaylocn     &bt BT_SEL 3                      &bt BT_SEL 4           &macro_windows                  &none
 &kp LG(RETURN)  &win_left     &FN_up        &win_right    &none           &macro_slideover       &left_taphold LG(L) LG(NUMBER_1)  &kp LG(LA(UP))         &left_taphold LG(LA(L)) LG(N0)  &kp LA(LG(EQUAL))
 &kp LSHFT       &FN_left      &FN_down      &FN_right     &none           &macro_switch          &kp LG(LEFT_BRACKET)              &kp RG(RA(DOWN))       &kp RG(RBKT)                    &kp RIGHT_SHIFT
-                              &kp LEFT_ALT  &swapper      &kp LCTRL       &kp RS(RA(RC(RG(L))))  &kp RG(RC(RA(RS(A))))             &kp LS(LA(LC(LG(H))))
+                              &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL       &kp RS(RA(RC(RG(L))))  &kp RG(RC(RA(RS(A))))             &kp LS(LA(LC(LG(H))))
             >;
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
@@ -851,8 +840,8 @@
             bindings = <
 &to 0      &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_LEFT     &mmv MOVE_Y(-500)  &msc SCRL_RIGHT   &to 0
 &kp LSHFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &msc SCRL_UP    &mmv MOVE_X(-500)  &mmv MOVE_Y(500)   &mmv MOVE_X(500)  &kp RSHFT
-&to 0      &to 0          &to 0          &to 0            &to 0           &to 0           &to 0             &to 0             &to 0            &to 0
-                          &to 0          &mkp MB2         &mkp MB1        &mkp MB1        &mkp MB2           &to 0
+&to 0      &to 0           &to 0           &to 0            &to 0           &to 0           &to 0              &to 0              &to 0             &to 0
+                           &to 0           &mkp MB2         &mkp MB1        &mkp MB1        &mkp MB2           &to 0
             >;
         };
 
@@ -867,10 +856,10 @@
             // Right thumbs: typing       mouse      unused
 
             bindings = <
-&none  &none  &none  &none  &none    &none         &select_device 0  &select_device 1  &select_device 2  &none
-&none  &none  &none  &none  &none    &ipad_mouse   &select_device 3  &select_device 4  &imac_typing      &to 5
-&none  &none  &none  &none  &none    &ipad_typing  &imac_mouse       &none             &none             &tog 6
-              &none  &none  &none    &to 0         &to 5             &none
+&none  &none  &none  &none  &none  &none         &select_device 0  &select_device 1  &select_device 2  &none
+&none  &none  &none  &none  &none  &ipad_mouse   &select_device 3  &select_device 4  &imac_typing      &to 5
+&none  &none  &none  &none  &none  &ipad_typing  &imac_mouse       &none             &none             &tog 6
+              &none  &none  &none  &to 0         &to 5             &none
             >;
         };
     };
