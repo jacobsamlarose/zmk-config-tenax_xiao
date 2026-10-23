@@ -698,7 +698,7 @@
         ht_skkp: ht_skkp {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_SKKP";
-            bindings = <&kp>, <&sk>;
+            bindings = <&kp>, <&sk_cmd_shift>;
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
@@ -715,6 +715,14 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <30 31 32 33>;
             hold-trigger-on-release;
+        };
+
+        sk_cmd_shift: sk_cmd_shift {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <3000>;
+            ignore-modifiers;
         };
     };
 
