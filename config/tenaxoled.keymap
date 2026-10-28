@@ -698,7 +698,7 @@
         ht_skkp: ht_skkp {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_SKKP";
-            bindings = <&kp>, <&sk_cmd_shift>;
+            bindings = <&kp>, <&sk>;
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
