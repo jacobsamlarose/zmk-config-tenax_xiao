@@ -891,10 +891,10 @@
             // Right thumbs: typing       mouse      unused
 
             bindings = <
-&none  &none  &none  &kp LS(TAB)  &none  &none         &select_device 0  &select_device 1  &select_device 2  &none
-&none  &none  &none  &kp TAB      &none  &ipad_mouse   &select_device 3  &select_device 4  &imac_typing      &to 5
-&none  &none  &none  &none        &none  &ipad_typing  &imac_mouse       &none             &none             &tog 6
-              &none  &none        &none  &to 0         &to 5             &none
+&none           &none  &none  &kp LS(TAB)  &none  &none         &select_device 0  &select_device 1  &select_device 2  &none
+&kp LEFT_SHIFT  &none  &none  &kp TAB      &none  &ipad_mouse   &select_device 3  &select_device 4  &imac_typing      &to 5
+&none           &none  &none  &none        &none  &ipad_typing  &imac_mouse       &none             &none             &tog 6
+                       &none  &none        &none  &to 0         &to 5             &none
             >;
         };
     };
