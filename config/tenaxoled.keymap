@@ -847,10 +847,10 @@
             label = "3SHORT";
             display-name = "3SHRT";
             bindings = <
-&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &macro_windows  &macro_displaylocn     &bt BT_SEL 3                        &bt BT_SEL 4           &macro_windows                    &none
-&kp LG(RETURN)  &win_left     &FN_up        &win_right    &none           &macro_slideover       &left_taphold (LG(L)) LG(NUMBER_1)  &kp LG(LA(UP))         &left_taphold (LG(LA(L))) LG(N0)  &kp LA(LG(EQUAL))
-&kp LSHFT       &FN_left      &FN_down      &FN_right     &kp LCTRL       &macro_switch          &kp LG(LEFT_BRACKET)                &kp RG(RA(DOWN))       &kp RG(RBKT)                      &kp RIGHT_SHIFT
-                              &kp LEFT_ALT  &swapper      &kp LCTRL       &kp RS(RA(RC(RG(L))))  &kp RG(RC(RA(RS(A))))               &kp LS(LA(LC(LG(H))))
+&none           &kp LG(LS(Z))  &none         &kp LG(Z)   &macro_windows         &macro_displaylocn     &kp RG(Z)                           &none                  &kp RG(RS(Z))                     &none
+&kp LG(RETURN)  &win_left      &FN_up        &win_right  &kp RS(RA(RC(RG(Y))))  &macro_slideover       &left_taphold (LG(L)) LG(NUMBER_1)  &kp LG(LA(UP))         &left_taphold (LG(LA(L))) LG(N0)  &kp LA(LG(EQUAL))
+&kp LSHFT       &FN_left       &FN_down      &FN_right   &kp LCTRL              &macro_switch          &kp LG(LEFT_BRACKET)                &kp RG(RA(DOWN))       &kp RG(RBKT)                      &kp RIGHT_SHIFT
+                               &kp LEFT_ALT  &swapper    &kp LCTRL              &kp RS(RA(RC(RG(L))))  &kp RG(RC(RA(RS(A))))               &kp LS(LA(LC(LG(H))))
             >;
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
@@ -891,10 +891,10 @@
             // Right thumbs: typing       mouse      unused
 
             bindings = <
-&none           &none  &none  &kp LS(TAB)  &none  &none         &select_device 0  &select_device 1  &select_device 2  &none
-&kp LEFT_SHIFT  &none  &none  &kp TAB      &none  &ipad_mouse   &select_device 3  &select_device 4  &imac_typing      &to 5
-&none           &none  &none  &none        &none  &ipad_typing  &imac_mouse       &none             &none             &tog 6
-                       &none  &none        &none  &to 0         &to 5             &none
+&none           &none  &none  &kp LS(TAB)  &none  &none  &select_device 4  &select_device 3  &select_device 2  &none
+&kp LEFT_SHIFT  &none  &none  &kp TAB      &none  &none  &select_device 1  &select_device 0  &ipad_typing      &to 5
+&none           &none  &none  &none        &none  &none  &imac_mouse       &imac_typing      &ipad_mouse       &tog 6
+                       &none  &none        &none  &to 0  &to 5             &none
             >;
         };
     };
