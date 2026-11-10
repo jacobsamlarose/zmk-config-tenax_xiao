@@ -145,7 +145,7 @@
 
         mo_L6 {
             bindings = <&sl 4>;
-            key-positions = <2 10 13>;
+            key-positions = <22 21 24 20>;
             layers = <0>;
         };
 
@@ -214,8 +214,8 @@
 
         cmb_bspLine {
             bindings = <&kp RG(BACKSPACE)>;
-            key-positions = <7 17>;
-            layers = <1>;
+            key-positions = <7 17 6>;
+            layers = <0>;
         };
 
         cmb_arrwordleft {
@@ -241,14 +241,14 @@
 
         cmb_L4_right {
             bindings = <&sl 4>;
-            key-positions = <7 16 19>;
+            key-positions = <27 28 29 25>;
             layers = <0>;
         };
 
         drafts_del_line {
             bindings = <&kp LC(LESS_THAN)>;
-            key-positions = <6 16>;
-            layers = <1>;
+            key-positions = <6 16 17>;
+            layers = <0>;
             timeout-ms = <200>;
         };
 
@@ -304,18 +304,12 @@
             timeout-ms = <130>;
         };
 
-        cmb_tab {
+        cmd_lt {
             bindings = <&cmd_lt 6 TAB>;
             key-positions = <12 2>;
             layers = <0>;
             timeout-ms = <40>;
             require-prior-idle-ms = <150>;
-        };
-
-        cmb_shifttab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <2 12>;
-            layers = <2>;
         };
 
         cmb_spotlight {
@@ -537,7 +531,6 @@
             label = "MCR_SPOTLIGHT";
         };
 
-
         cmd_layer: cmd_layer {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -546,20 +539,11 @@
             bindings =
                 <&macro_param_1to1>,
                 <&macro_press>,
-                <&mo MACRO_PLACEHOLDER>,
-                <&kp LGUI>,
+                <&mo MACRO_PLACEHOLDER &kp LGUI>,
                 <&macro_pause_for_release>,
-        
-                // Release Cmd.
                 <&macro_release>,
-                <&kp LGUI>,
-        
-                // Release the layer.
-                <&macro_param_1to1>,
-                <&mo MACRO_PLACEHOLDER>,
-        
-                // Allow time before the Shift reset.
-                <&macro_wait_time 150>,
+                <&kp LGUI &macro_param_1to1 &mo MACRO_PLACEHOLDER>,
+                <&macro_wait_time 300>,
                 <&macro_tap_time 30>,
                 <&macro_tap>,
                 <&kp LEFT_SHIFT>;
@@ -844,9 +828,9 @@
             label = "2SYME";
             display-name = "2SYM";
             bindings = <
-&none  &kp EXCL        &kp AT_SIGN     &kp LA(NUMBER_3)                      &none         &kp RS(RG(NUMBER_3))  &kp C_RW      &kp C_VOL_UP  &kp C_FF    &none
-&kp A  &kp LEFT_SHIFT  &ht_hl 1 GRAVE  &ht_hyper LS(LA(LC(LEFT_GUI))) TILDE  &kp PLUS      &none                 &kp C_BRI_UP  &kp C_VOL_DN  &none       &none
-&none  &none           &kp PIPE        &kp UNDER                             &kp KP_EQUAL  &none                 &kp C_BRI_DN  &none         &mc_ellips  &kp RIGHT_SHIFT
+&none  &kp EXCL        &kp AT_SIGN     &kp LA(NUMBER_3)                      &none         &kp RS(RG(NUMBER_3))  &kp C_RW      &kp C_VOL_UP  &kp C_FF               &none
+&kp A  &kp LEFT_SHIFT  &ht_hl 1 GRAVE  &ht_hyper LS(LA(LC(LEFT_GUI))) TILDE  &kp PLUS      &none                 &kp C_BRI_UP  &kp C_VOL_DN  &kp RS(RA(RC(RG(M))))  &none
+&none  &none           &kp PIPE        &kp UNDER                             &kp KP_EQUAL  &none                 &kp C_BRI_DN  &none         &mc_ellips             &kp RIGHT_SHIFT
                        &sk LEFT_ALT    &sk LCMD                              &sk LCTRL     &trans                &trans        &trans
             >;
 
@@ -901,10 +885,10 @@
             // Right thumbs: typing       mouse      unused
 
             bindings = <
-&none           &none  &none  &kp LS(TAB)  &none  &none  &select_device 2  &select_device 3  &select_device 4  &none
-&kp LEFT_SHIFT  &none  &none  &kp TAB      &none  &none  &select_device 0  &select_device 1  &ipad_mouse       &to 5
-&none           &none  &none  &none        &none  &none  &imac_mouse       &imac_typing      &ipad_typing      &tog 6
-                       &none  &none        &none  &to 0  &to 5             &none
+&none  &none        &none  &none                  &none                  &none         &select_device 2  &select_device 3  &select_device 4  &none
+&none  &kp LS(TAB)  &none  &kp TAB                &none                  &ipad_mouse   &ipad_typing      &select_device 0  &select_device 1  &to 5
+&none  &none        &none  &none                  &none                  &imac_typing  &imac_mouse       &imac_typing      &ipad_typing      &tog 6
+                    &none  &kp LG(LC(LA(LS(M))))  &kp LG(LC(LA(LS(L))))  &to 0         &to 5             &none
             >;
         };
     };
