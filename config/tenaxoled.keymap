@@ -312,8 +312,8 @@
             require-prior-idle-ms = <150>;
         };
 
-        cmb_spotlight {
-            bindings = <&mcr_spotlight>;
+        cmb_draftseditor {
+            bindings = <&kp LG(ENTER)>;
             key-positions = <13 14 4>;
             layers = <0>;
         };
@@ -365,6 +365,20 @@
             key-positions = <3 13>;
             layers = <6>;
             timeout-ms = <150>;
+        };
+
+        cmb_scrlldn {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <6 16>;
+            timeout-ms = <150>;
+            layers = <5>;
+        };
+
+        cmb_scrlup {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <16 26>;
+            timeout-ms = <150>;
+            layers = <5>;
         };
     };
 
