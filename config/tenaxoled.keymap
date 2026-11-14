@@ -380,6 +380,13 @@
             timeout-ms = <150>;
             layers = <5>;
         };
+
+        cmb_shtab_alt {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <12 1>;
+            layers = <0>;
+            timeout-ms = <100>;
+        };
     };
 
     behaviors {
