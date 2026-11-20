@@ -248,7 +248,7 @@
         drafts_del_line {
             bindings = <&kp LC(LESS_THAN)>;
             key-positions = <6 7 17>;
-            layers = <1>;
+            layers = <0>;
             timeout-ms = <200>;
         };
 
