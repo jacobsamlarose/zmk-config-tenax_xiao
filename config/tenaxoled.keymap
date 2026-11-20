@@ -151,7 +151,7 @@
 
         cmb_undo {
             bindings = <&kp LG(Z)>;
-            key-positions = <13 4 14>;
+            key-positions = <13 3 12>;
             layers = <0>;
             timeout-ms = <200>;
         };
@@ -214,7 +214,7 @@
 
         cmb_bspLine {
             bindings = <&kp RG(BACKSPACE)>;
-            key-positions = <5 15 16>;
+            key-positions = <16 6 17>;
             layers = <0>;
         };
 
@@ -234,9 +234,9 @@
 
         cmb_redo {
             bindings = <&kp LS(RG(Z))>;
-            key-positions = <4 14 13>;
-            timeout-ms = <200>;
-            layers = <6>;
+            key-positions = <12 22 13>;
+            timeout-ms = <120>;
+            layers = <0>;
         };
 
         cmb_L4_right {
@@ -247,7 +247,7 @@
 
         drafts_del_line {
             bindings = <&kp LC(LESS_THAN)>;
-            key-positions = <16 5 15>;
+            key-positions = <6 7 17>;
             layers = <1>;
             timeout-ms = <200>;
         };
@@ -261,13 +261,13 @@
 
         cmb_hyper {
             bindings = <&sk LS(LA(LC(LCMD)))>;
-            key-positions = <1 11>;
+            key-positions = <13 4 14>;
             layers = <0>;
         };
 
         cmb_meh_lh {
             bindings = <&sk LS(LA(LCTRL))>;
-            key-positions = <10 0>;
+            key-positions = <14 24 23>;
             layers = <0>;
             timeout-ms = <130>;
         };
@@ -292,14 +292,14 @@
 
         cmb_hyper_r {
             bindings = <&sk LS(LA(LC(LCMD)))>;
-            key-positions = <18 8>;
+            key-positions = <5 15 16>;
             layers = <0>;
             timeout-ms = <130>;
         };
 
         cmb_meh_rh {
             bindings = <&sk LS(LA(LCTRL))>;
-            key-positions = <19 9>;
+            key-positions = <15 25 26>;
             layers = <0>;
             timeout-ms = <130>;
         };
@@ -314,7 +314,7 @@
 
         cmb_draftseditor {
             bindings = <&kp LG(ENTER)>;
-            key-positions = <14 24 23>;
+            key-positions = <0 10>;
             layers = <0>;
         };
 
@@ -383,7 +383,7 @@
 
         cmb_shtab_alt {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 1>;
+            key-positions = <12 1 2>;
             layers = <0>;
             timeout-ms = <100>;
         };
